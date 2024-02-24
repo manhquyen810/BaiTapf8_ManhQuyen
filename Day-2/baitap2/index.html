@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+    <style></style>
+  </head>
+  <body>
+    <form action="" style="background-color: rgb(231, 231, 231)">
+      <!-- 1 -->
+      <div>
+        <h1 style="color: black">Try a free sample</h1>
+        <pre style="color: black; font-family: 'Helvetica'">
+ Sign up to get a coupon you can redeem at your nearest Dancing 
+ Goat cafe for a sample of the Colombia Carlos Imbachi coffe. We''ll 
+ aslo make sure you don't miss out on news introducing the new 
+ coffees that we add to our store regularly.
+        </pre>
+      </div>
+      <!-- 2 
+width: Chiều rộng của bảng
+border: Viền của bảng
+cellpadding: Khoảng cách giữa nội dung từng ô tới viền của ô
+cellspacing: Khoảng cách giữa các ô -->
+      <table width="100%" border="0" cellpadding="3" cellspacing="2">
+        <tr>
+          <td>
+            <label for="first_name"><b>First name</b></label>
+          </td>
+          <td>
+            <label for="last_name"><b>Last Name</b></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="first_name"
+              type="text"
+              name="first_name"
+              placeholder="Enter first name"
+              value="John"
+            />
+          </td>
+          <td>
+            <input
+              id="last_name"
+              type="text"
+              name="last_name"
+              placeholder="Enter last name"
+              value="Smith"
+            />
+          </td>
+        </tr>
+        <!-- 2 -->
+        <tr>
+          <td>
+            <label for="email"><b>Email Address</b></label>
+          </td>
+          <td>
+            <label for="address"><b>Address</b></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Enter email address"
+              value="john@example.com"
+            />
+          </td>
+          <td>
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="Enter address"
+              value="Silk St"
+            />
+          </td>
+        </tr>
+        <!-- 3 -->
+        <tr>
+          <td>
+            <label for="city"><b>City</b></label>
+          </td>
+          <td>
+            <label for="state"><b>State</b>(optional)</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="city"
+              type="text"
+              name="city"
+              placeholder="Enter city"
+              value="London"
+            />
+          </td>
+          <td>
+            <input
+              id="state"
+              type="text"
+              name="state"
+              placeholder="Enters state"
+            />
+          </td>
+        </tr>
+        <!-- 4 -->
+        <tr>
+          <td>
+            <label for="zip"><b>ZIP code</b></label>
+          </td>
+          <td>
+            <label for="country"><b>Country</b></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              id="zip"
+              type="text"
+              name="zip"
+              placeholder="Enter zip"
+              value="EC2Y 8DS"
+            />
+          </td>
+          <td>
+            <select name="city" id="city">
+              <option value="anh">United Kingdom</option>
+              <option value="viet_nam">Viet Nam</option>
+              <option value="my">United State</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="submit"
+              value="SEND ME FREE COFFEE"
+              style="
+                background-color: rgb(8, 119, 141);
+                color: white;
+                padding: 1px 2px;
+              "
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
