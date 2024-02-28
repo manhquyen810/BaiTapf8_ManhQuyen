@@ -1,0 +1,57 @@
+* {
+  font-family: monospace;
+}
+/* header */
+h1 {
+  margin-left: 40px;
+}
+hr {
+  background-color: orange;
+  border-color: orange;
+  border-style: solid;
+  padding: 2px 2px;
+  width: 65px;
+  margin-left: 40px;
+}
+main {
+  display: flex;
+}
+/* Phần aside */
+.contact {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.contact p {
+  color: gray;
+}
+.contact img {
+  margin-right: 10px;
+  color: gray;
+}
+/* Phần section */
+.welcome {
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.welcome .form_div {
+  padding-top: 10px;
+}
+
+.information {
+  width: 606px;
+  height: 20px;
+  border: 1px solid gray;
+}
+.textarea_info {
+  border: 1px solid gray;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  height: 30px;
+  border: 1px solid blue;
+}
