@@ -1,0 +1,63 @@
+/* nav */
+ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /*margin: Trên dưới phải trái */
+  margin: 20px 0 0 50px;
+  width: 50%;
+  height: 56px;
+  border: 2px solid rgb(175, 150, 86);
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.country-1 {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.country-2 {
+  margin-left: 70px;
+}
+
+a {
+  color: rgb(175, 150, 86);
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+a:hover {
+  background-color: rgb(175, 150, 86);
+  color: white;
+}
+
+/* footer */
+.foot {
+  display: flex;
+  padding-bottom: 140px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  background-color: #f6f6f6;
+}
+
+.information {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.information-1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.information-2,
+.information-3 {
+  color: gray;
+}
+
+.map {
+  margin-left: 140px;
+}
