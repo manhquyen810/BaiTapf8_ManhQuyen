@@ -1,0 +1,62 @@
+.foot {
+  padding: 10px;
+  background-color: rgb(51, 68, 85);
+  border-radius: 10px;
+}
+/* text */
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+span {
+  color: rgb(255, 165, 0);
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.foot-main {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* input */
+input {
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(51, 68, 85);
+  border-radius: 3px;
+}
+
+input::placeholder {
+  /* thụt lề văn bản */
+  text-indent: 10px;
+  color: gray;
+}
+
+input:hover {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+/* :hover::-webkit-input-placeholder - chuyển đổi màu khi chạm vào */
+input:hover::-webkit-input-placeholder {
+  color: rgb(255, 165, 0);
+}
+
+/* button */
+button {
+  width: 200px;
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+
+button:hover {
+  background-color: rgb(255, 165, 0);
+  color: #fff;
+  border: 1px solid rgb(255, 165, 0);
+}

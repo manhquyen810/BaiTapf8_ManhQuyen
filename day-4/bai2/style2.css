@@ -1,0 +1,55 @@
+/* tiêu đề */
+.section-1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "BebasNeue", sans-serif;
+  color: rgb(58, 38, 22);
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: "Alfa Slab One", sans-serif;
+  letter-spacing: -7px;
+  margin-top: 20px;
+  color: rgb(58, 38, 22);
+  text-shadow: 100px;
+}
+
+/* table */
+.section-2 {
+  margin-top: 10px;
+}
+/* input */
+input {
+  width: 350px;
+  height: 50px;
+  font-family: "BebasNeue", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  text-indent: 15px;
+  border: 2px solid rgb(225, 225, 225);
+}
+.row-1 {
+  text-align: right;
+}
+.row-2 {
+  text-align: left;
+}
+
+/* button */
+.button-1 {
+  width: 360px;
+  height: 50px;
+  font-family: "Alfa Slab One", serif;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+  background-color: rgb(176, 51, 43);
+  border: 2px solid rgb(176, 51, 43);
+  border-radius: 10px;
+}
