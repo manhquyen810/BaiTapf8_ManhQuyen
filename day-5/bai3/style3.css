@@ -2,11 +2,13 @@
   padding: 0;
   margin: 0;
   outline: 0;
+  box-sizing: border-box;
 }
 
 .section {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .section .heading {
@@ -24,27 +26,44 @@
 
 .section .article {
   display: flex;
-  position: relative;
-  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 3rem;
 }
 
-.section .article .layout-1,
-.layout-2,
-.layout-3 {
+.section .article .layout {
   text-align: center;
-  border: 2px solid grey;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.section .article .layout-1,
-.layout-3 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.section .article .layout .icon {
+  font-size: 3rem;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 200%;
+  padding: 5rem;
+  margin-top: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
-.section .article .layout-1 .icon {
-  border: 2px solid yellow;
-  border-radius: 120%;
-  width: 5rem;
-  padding: 4rem;
-  transform: translateX(60%);
+.section .article .layout h2 {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.section .article .layout p {
+  color: grey;
+}
+
+.section .article .layout button {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: orange;
+  color: white;
+  border-radius: 0;
+  border: 1px solid orange;
 }
