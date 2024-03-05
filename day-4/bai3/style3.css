@@ -53,6 +53,12 @@ button:hover {
   margin-right: 40px;
 }
 
+.product-1,
+.product-2,
+.product-3,
+.product-4:hover {
+}
+
 .check-star {
   text-align: center;
   margin-top: 30px;

@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+.article {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 0.8rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.article .container-1 h2,
+.container-2 h2,
+.container-3 h2 {
+  font-size: 1.2rem;
+  /* width: 62rem;
+  height: 3rem; */
+  padding: 1rem 20rem;
+  margin-top: 0.8rem;
+  color: white;
+  background-color: rgb(217, 88, 36);
+}
+
+/* Chưa căn title cho zô đầu dòng */
+.article .container-1 h2 #title {
+}
+
+.article .container-1 h2 #title::before,
+.container-2 h2 #title-2::before,
+.container-3 h2 #title-3::before {
+  content: "+";
+  margin-right: 0.5rem;
+}
+
+.article .container-1 .content-1,
+.container-2 .content-2,
+.container-3 .content-3 {
+  display: none;
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+.article .container-1 .content-1 span {
+  font-weight: 900;
+}
+
+#ticket:checked ~ .content-1,
+#ticket-2:checked ~ .content-2,
+#ticket-3:checked ~ .content-3 {
+  display: block;
+}
+
+#ticket:checked + h2 #title::before,
+#ticket-2:checked + h2 #title-2::before,
+#ticket-3:checked + h2 #title-3::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
