@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: #ff574d; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  background: url(../image/nen.jpg) no-repeat 0 / cover;
+  font-family: Nunito, sans-serif;
+}
+/* Phần phụ */
+.aside {
+  width: 350px;
+  height: 500px;
+  background-color: #ff574d;
+  border-radius: 10px 0 0 10px;
+}
+
+.aside .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.aside .head .icon {
+  font-size: 40px;
+  color: white;
+  margin-right: 20px;
+}
+
+.aside .head h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.aside p {
+  text-align: center;
+  margin: 20px 20px 0 20px;
+  color: white;
+}
+
+.aside .button-1 {
+  margin: 30px 0 0 110px;
+  padding: 8px 30px;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #ff574d;
+  cursor: pointer;
+}
+
+.aside .icon-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.aside .icon-1 .button-2 {
+  padding: 10px;
+  background-color: rgb(219, 91, 78);
+  margin: 0 5px 0 5px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* Phần chính */
+.section {
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  border-radius: 0 10px 10px 0;
+}
+
+.section .article {
+  margin: 50px 0 0 0;
+}
+
+.section .article h2 {
+  text-align: center;
+}
+
+.section .article h2 span {
+  color: #ff574d;
+}
+
+.section .article hr {
+  width: 60px;
+  height: 3px;
+  background-color: #ff574d;
+  border: 1px solid #ff574d;
+  margin: 10px 0 0 170px;
+}
+
+.section .article form {
+  margin-top: 20px;
+}
+.section .article form .input-text input[type="text"] {
+}

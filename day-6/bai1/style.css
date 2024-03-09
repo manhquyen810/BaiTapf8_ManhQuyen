@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url(../font/OpenSans-Regular.ttf);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 56rem;
+  height: 3rem;
+  margin: 3rem 2rem;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.nav .container .nav-1,
+.nav-2,
+.nav-3,
+.nav-4,
+.nav-5,
+.nav-6 {
+  background-color: transparent;
+}
+
+.nav .container .nav-1 .icon button {
+  display: block;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  background-color: transparent;
+}
+
+/* 2 */
+.nav .container .nav-2 {
+  display: block;
+  width: 2rem;
+  height: 3rem;
+  margin: 0;
+}
+
+.nav .container .nav-2 .icon {
+  position: absolute;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 15px;
+}
+
+.nav .container .nav-2 form #select-1 {
+  width: 7rem;
+  height: 3rem;
+  text-indent: 2rem;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+}
+/* 3 */
+.nav .container .nav-3 {
+  display: block;
+  width: 5rem;
+  height: 3rem;
+  margin-left: 5rem;
+}
+
+.nav .container .nav-3 .icon {
+  position: absolute;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 15px;
+}
+
+.nav .container .nav-3 form #select-2 {
+  width: 6rem;
+  height: 3rem;
+  text-indent: 2rem;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+/* 4 */
+.nav .container .nav-4 {
+  display: block;
+  width: 4rem;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.nav .container .nav-4 .icon {
+  position: absolute;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 15px;
+}
+
+.nav .container .nav-4 form #select-3 {
+  width: 7rem;
+  height: 3rem;
+  text-indent: 2rem;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+}
+/* 5 */
+.nav .container .nav-5 {
+  display: block;
+  width: 5rem;
+  height: 3rem;
+  margin: 2rem;
+}
+
+.nav .container .nav-5 .icon {
+  position: absolute;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 15px;
+}
+
+.nav .container .nav-5 button {
+  width: 5rem;
+  height: 3rem;
+  text-indent: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  border-right: 2px solid rgba(128, 128, 128, 0.377);
+}
+/* 6 */
+.nav .container .nav-6 {
+  display: block;
+  width: 6rem;
+  height: 3rem;
+  margin-left: 20rem;
+}
+
+.nav .container .nav-6 .icon {
+  position: absolute;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 15px;
+}
+
+.nav .container .nav-6 button {
+  width: 6rem;
+  height: 3rem;
+  text-indent: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  border-left: 2px solid rgba(128, 128, 128, 0.377);
+}
+
+/* hover */
+/* 1 */
+.nav .container .nav-1:hover {
+  background-color: rgb(83, 163, 212);
+  border: 0 solid transparent;
+}
+
+.nav .container .nav-1 .icon:hover button {
+  color: white;
+}
+
+/* 2 */
+.nav .container .nav-2:hover form #select-1,
+.nav .container .nav-3:hover form #select-2,
+.nav .container .nav-4:hover form #select-3 {
+  background-color: rgb(83, 163, 212);
+  border: 0 solid transparent;
+  color: white;
+}
+
+.nav .container .nav-2:hover .icon,
+.nav .container .nav-3:hover .icon,
+.nav .container .nav-4:hover .icon {
+  color: white;
+}
+
+.nav .container .nav-5:hover,
+.nav .container .nav-6:hover {
+  background-color: rgb(83, 163, 212);
+  border: 0 solid transparent;
+  color: white;
+}
+
+.nav .container .nav-5:hover button,
+.nav .container .nav-6:hover button {
+  color: white;
+}
