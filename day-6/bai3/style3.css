@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin-top: 40px;
 }
 
 .aside .icon-1 .button-2 {
@@ -70,6 +70,21 @@ body {
   color: white;
   cursor: pointer;
   border: 1px solid transparent;
+}
+/* phần mid */
+.directional {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(223, 214, 214);
+  color: #ff574d;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.directional span {
 }
 
 /* Phần chính */
@@ -103,5 +118,56 @@ body {
 .section .article form {
   margin-top: 30px;
 }
+.section .article form .input-text {
+  margin-left: 40px;
+}
 .section .article form .input-text input[type="text"] {
+  width: 320px;
+  height: 45px;
+  text-indent: 20px;
+  box-shadow: 0 2px 4px #717171;
+  border: 1px solid gray;
+}
+
+.section .article form .input-text input[type="text"] #password {
+  margin-top: 20px;
+}
+
+.section .article form .input-checkbox {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.section .article form .input-checkbox label {
+  margin-right: 70px;
+  color: #717171;
+}
+
+.section .article form .input-checkbox a {
+  position: relative;
+  right: 20px;
+  text-decoration: none;
+  color: #717171;
+}
+
+.section .article form button {
+  width: 320px;
+  height: 45px;
+  margin: 20px 0 0 40px;
+  background-color: #ff574d;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #ff574d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section .article form p {
+  margin-top: 20px;
+  text-align: center;
+  color: #717171;
+}
+
+.section .article form p a {
+  text-decoration: none;
 }
