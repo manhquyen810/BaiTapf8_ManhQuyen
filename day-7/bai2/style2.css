@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: Asap, sans-serif;
+}
+
+.header {
+  background: url(../image/vingroup1-anh1.jpg) no-repeat 100% / cover fixed;
+  height: 300px;
+}
+
+.header .container img {
+  float: left;
+  width: 220px;
+  height: 180px;
+  margin: 150px 0 0 50px;
+  border-radius: 5px;
+}
+
+.header .container .content {
+  position: absolute;
+  margin: 150px 0 0 300px;
+  color: white;
+}
+
+.header .container .content h1 {
+  margin: 20px 0 0 0;
+  font-size: 27px;
+}
+
+.header .container .content .p {
+  display: flex;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.header .container .content .p .text-2 {
+  margin-left: 30px;
+}
+
+.header .container .content .p span {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav .selection {
+  float: right;
+  margin: 0 80px 0 0;
+}
+
+.nav .selection a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 600;
+  color: #3f3424;
+}
+
+.nav .selection .a-1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  /* background-color: red; */
+  margin: 0 0 0 19px;
+}
+
+.nav .selection .a-2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 78%;
+  height: 3px;
+  /* background-color: red; */
+  margin: 0 0 0 19px;
+}
+
+.nav .selection .a-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  margin: 0 0 0 19px;
+}
+.nav .selection a:hover {
+  color: orangered;
+}
+.nav .selection .a-1:hover::before,
+.a-2:hover::before,
+.a-3:hover::before {
+  background-color: orangered;
+}

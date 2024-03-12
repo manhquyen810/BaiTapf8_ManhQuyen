@@ -78,13 +78,15 @@ body {
   height: 50px;
   background-color: rgb(223, 214, 214);
   color: #ff574d;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 50%;
   text-align: center;
   transform: translateX(-50%);
+  box-shadow: 0 2px 4px gray;
 }
 
 .directional span {
+  line-height: 50px;
 }
 
 /* Phần chính */
@@ -130,7 +132,6 @@ body {
 }
 
 .section .article form .input-text input[type="text"] #password {
-  margin-top: 20px;
 }
 
 .section .article form .input-checkbox {
