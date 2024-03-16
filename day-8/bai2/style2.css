@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.sidebar {
+  float: right;
+  padding: 300px 200px;
+  background-color: rgba(128, 128, 128, 0.418);
+  position: relative;
+}
+
+.sidebar .head {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+}
+
+.sidebar .head h2 {
+  position: absolute;
+  font-size: 20px;
+  left: 5%;
+  top: 30%;
+}
+
+.sidebar .head .icon-1 {
+  display: block;
+  position: absolute;
+  left: 38%;
+  top: 15%;
+  background-color: blue;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  width: 15px;
+  text-align: center;
+}
+
+.sidebar .head .icon-2 {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  width: 20px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar .product {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: black;
+  overflow-y: scroll;
+}
+
+.sidebar .product-1 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border: 2px solid gray;
+  border-inline: none;
+}
+
+.sidebar .product-2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.sidebar .product-1 p,
+.product-2 p {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+}
+
+.sidebar .product img {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(245, 222, 179, 0.418);
+}
+
+.sidebar .product-1 .title,
+.product-2 .title {
+  color: grey;
+}
+.sidebar .product-1 .quantity,
+.product-2 .quantity {
+  top: 52%;
+  left: 25%;
+  padding: 5px 40px;
+  border: 1px solid gray;
+  border-radius: 30% 30% 30% 30%;
+  font-size: 12px;
+}
+.sidebar .product-1 .quantity::before,
+.product-2 .quantity::before {
+  content: "-";
+  position: absolute;
+  left: 10%;
+  top: 0;
+  font-size: 20px;
+  color: gray;
+}
+
+.sidebar .product-1 .quantity::after,
+.product-2 .quantity::after {
+  content: "+";
+  position: absolute;
+  right: 10%;
+  top: 0;
+  font-size: 20px;
+  color: gray;
+}
+
+.sidebar .product-1 .price,
+.product-2 .price {
+  top: 55%;
+  left: 65%;
+
+  font-weight: 600;
+}
+
+.sidebar .product-1 .icon,
+.product-2 .icon {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  color: grey;
+  cursor: pointer;
+}
+
+.sidebar .total {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  left: 0;
+  background-color: white;
+  top: 55%;
+}
+
+.sidebar .total h3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.sidebar .total .price-total {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.sidebar .total .title-2 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: grey;
+  font-size: 15px;
+}
+
+.sidebar .total .btn-1 {
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  padding: 20px 143px;
+  font-size: 15px;
+  color: gray;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar .total .btn-2 {
+  position: absolute;
+  top: 60%;
+  left: 6%;
+  padding: 20px 140px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(64, 96, 242);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar .total .foot-sidebar {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+
+.sidebar .total .foot-sidebar .icon-3 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(64, 96, 242);
+  border-radius: 50%;
+  border: 1px solid rgb(64, 96, 242);
+}
+.sidebar .total .foot-sidebar .title-3 {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-weight: 900;
+}

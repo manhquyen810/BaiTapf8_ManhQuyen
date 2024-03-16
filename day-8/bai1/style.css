@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  background: url(../image/anh-cv.jpg) 0 / cover no-repeat fixed;
+  color: rgb(53, 62, 79);
+}
+.container {
+  display: flex;
+}
+
+.head h1 {
+  margin: 30px 0 0 50px;
+}
+.head h1 .icon-box {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.247);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  color: white;
+}
+
+.menu {
+  /* background-color: gray; */
+  position: absolute;
+  right: 50px;
+  top: 4%;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 10px 22px;
+  position: relative;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(53, 62, 79);
+}
+
+.menu ul li .icon-1 {
+  position: absolute;
+  font-size: 10px;
+  right: 10px;
+  top: 35%;
+}
+
+.menu .icon-2-1,
+.icon-2-2 {
+  position: absolute;
+  right: 12px;
+}
+
+.selection {
+  display: flex;
+  margin: 30px 50px 0 50px;
+  padding: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  position: relative;
+  font-weight: 900;
+  overflow: hidden;
+}
+
+.selection ul li {
+  list-style: none;
+  text-shadow: 0 0 2px white;
+}
+
+.selection .title-1,
+.title-2,
+.title-3 {
+  text-transform: uppercase;
+  text-shadow: 0 0 2px white;
+}
+
+.selection .selection-left {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.selection .selection-top-left,
+.selection-bottom-left {
+  display: flex;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.selection .selection-top-left .col-2,
+.selection-bottom-left .col-2 {
+  position: absolute;
+  left: 250px;
+}
+
+.selection .title-2 {
+  margin-top: 40px;
+}
+
+.selection .border-mid {
+  position: absolute;
+  width: 1px;
+  height: 320px;
+  left: 36%;
+  top: 10%;
+  border-left: 1px solid gray;
+}
+
+.selection .selection-right {
+  position: absolute;
+  left: 40%;
+  top: 40px;
+}
+
+.selection .selection-right .col {
+  display: flex;
+  margin-top: 10px;
+  line-height: 32px;
+}
+
+.selection .selection-right .col .col-mid,
+.col-right {
+  margin-left: 200px;
+}
+
+.selection ul li {
+  cursor: pointer;
+}
+
+.menu ul li:hover a,
+.menu ul li:hover {
+  color: #868b95;
+}
