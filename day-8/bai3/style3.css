@@ -7,3 +7,67 @@
 body {
   font-family: Roboto, sans-serif;
 }
+
+.head {
+  position: relative;
+  margin-top: 20px;
+  left: 40%;
+}
+
+.head h1 {
+  font-family: serif;
+  font-size: 40px;
+  text-shadow: 1px 1px gray;
+}
+
+.head p {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.content .row-1,
+.row-2 {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 30px 150px 0 100px;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+  padding: 30px;
+  text-align: center;
+}
+
+.content-1 h2,
+.content-2 h2,
+.content-3 h2 {
+  margin: 20px 0 10px 0;
+  font-size: 25px;
+  font-family: serif;
+}
+
+.content-1 p,
+.content-2 p,
+.content-3 p {
+  font-size: 12px;
+  color: grey;
+  width: 400px;
+  height: 20px;
+  padding: 20px;
+  line-height: 20px;
+}
+
+.content-1 button,
+.content-2 button,
+.content-3 button {
+  padding: 8px 30px;
+  margin-top: 80px;
+  color: white;
+  background-color: rgb(41, 56, 142);
+  border: none;
+  box-shadow: 0 0 0 5px rgb(41, 56, 142);
+  cursor: pointer;
+}
