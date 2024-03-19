@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.322);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+}
+.container .head {
+  text-align: center;
+}
+
+.container .head h1 {
+  font-size: 40px;
+  font-family: "Space Grotes", sans-serif;
+}
+
+.container .head p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Intel, sans-serif;
+}
+
+.container .contact-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  height: 40vh;
+  border: 1px solid pink;
+}
+
+.container .contact-form ul li {
+  list-style: none;
+}
+.container .contact-form .row-1,
+.row-2 {
+  display: flex;
+}
+
+.container .contact-form .row-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.container .contact-form .row-1 #f-name,
+.row-2 #email {
+  position: absolute;
+  width: 48%;
+  height: 50px;
+  border-radius: 10px;
+}
+.row-2 #email {
+  top: 15%;
+}
+
+.container .contact-form .row-1 #l-name,
+.row-2 #sale {
+  position: absolute;
+  width: 48%;
+  height: 50px;
+  right: 0;
+  border-radius: 10px;
+}
+
+.row-2 #sale {
+  top: 15%;
+}
