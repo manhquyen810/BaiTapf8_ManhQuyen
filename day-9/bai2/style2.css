@@ -9,7 +9,7 @@
   margin: 50px 400px 50px 400px;
   width: 60%;
   height: 600px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container .content {
@@ -24,7 +24,7 @@
   align-items: center;
   width: 100%;
   height: 280px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .container .content .row-2 {
@@ -35,7 +35,7 @@
   width: 100%;
   height: 280px;
   bottom: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .container .content .row-1 .content-1,

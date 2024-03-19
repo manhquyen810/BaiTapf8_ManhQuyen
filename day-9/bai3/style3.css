@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100%;
   height: 60vh;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .container .head {
   text-align: center;
@@ -37,7 +37,6 @@ body {
   top: 20%;
   width: 70%;
   height: 40vh;
-  border: 1px solid pink;
 }
 
 .container .contact-form ul li {
@@ -60,9 +59,10 @@ body {
   width: 48%;
   height: 50px;
   border-radius: 10px;
+  border: 1px solid grey;
 }
 .row-2 #email {
-  top: 15%;
+  top: 20%;
 }
 
 .container .contact-form .row-1 #l-name,
@@ -72,8 +72,43 @@ body {
   height: 50px;
   right: 0;
   border-radius: 10px;
+  border: 1px solid grey;
 }
 
 .row-2 #sale {
-  top: 15%;
+  top: 20%;
+}
+
+.container .contact-form textarea {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.container .contact-form button {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  bottom: 0;
+  left: 45%;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: rgb(76, 119, 216);
+  font-size: 15px;
+  color: white;
+}
+.container .contact-form input[type="text"]::placeholder {
+  position: absolute;
+  left: 5%;
+  font-size: 15px;
+}
+.container .contact-form textarea::placeholder {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  font-size: 15px;
 }
