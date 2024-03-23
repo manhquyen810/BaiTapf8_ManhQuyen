@@ -13,7 +13,7 @@
   position: relative;
   overflow: hidden;
   left: 20%;
-  width: 600px;
+  width: 700px;
   height: 800px;
   /* border: 3px solid red; */
 }
@@ -68,6 +68,18 @@
   height: 200px;
   text-align: right;
   /* border: 1px solid blue; */
+  transition: all 5s linear;
+}
+
+.container .time-main .time-1:hover .content,
+.time-2:hover .content,
+.time-3:hover .content,
+.time-4:hover .content {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 55.5%;
+  text-align: left;
 }
 
 .container .time-main .time-1 .content h2,
@@ -108,7 +120,8 @@
   /* border: 1px solid pink; */
   position: absolute;
   top: 5%;
-  right: 19%;
+  right: 30%;
+  transition: all 5s linear;
 }
 
 .container .time-main .time-1 .time-year span,
@@ -128,10 +141,26 @@
   top: 20%;
   right: 15%;
   color: gray;
+  /* border: 1px solid red; */
   font-family: "Space Grotes", sans-serif;
   font-size: 15px;
 }
 
+.container .time-main .time-1:hover .time-year,
+.time-2:hover .time-year,
+.time-3:hover .time-year,
+.time-4:hover .time-year {
+  position: absolute;
+  left: 35%;
+  text-align: right;
+}
+.container .time-main .time-1:hover .content button,
+.time-2:hover .content button,
+.time-3:hover .content button,
+.time-4:hover .content button {
+  background-color: rgb(162, 111, 90);
+  color: white;
+}
 .container .time-main .time-1 .line,
 .time-2 .line,
 .time-3 .line,
@@ -140,7 +169,7 @@
   width: 30px;
   height: 200px;
   /* border: 1px solid purple; */
-  right: 36%;
+  right: 45%;
 }
 
 .container .time-main .time-1 .dot::before,

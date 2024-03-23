@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.418);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin: 50px auto;
+  width: fit-content;
+  height: 230px;
+  /* border: 1px solid blue; */
+  background-color: white;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  list-style: none;
+}
+
+.container .content li {
+  padding: 15px 35px;
+  text-align: center;
+  border: 1px solid gray;
+  color: gray;
+  display: inline-block;
+}
+
+.container .content li label {
+  display: inline-block;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.container .content li .text {
+  position: absolute;
+  text-align: left;
+  top: 110%;
+  left: 0;
+  height: 170px;
+  background-color: white;
+  overflow-x: scroll;
+  /* display: none; */
+}
+
+.container .content li .text h2 {
+  margin: 20px 0 0 20px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.795);
+}
+
+.container .content li .text p {
+  margin: 0 0 0 20px;
+  line-height: 25px;
+}
+
+input:checked ~ .text {
+  display: block;
+  background-color: blue;
+  color: white;
+}
+
+li:hover {
+  background-color: rgb(66, 152, 219);
+  color: white;
+}
+
+li:hover label {
+  color: white;
+}
