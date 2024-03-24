@@ -51,6 +51,7 @@ body {
   background-color: white;
   overflow-x: scroll;
   display: none;
+  transition: height 1s ease-in;
 }
 
 .container .content li .text h2 {
@@ -64,11 +65,24 @@ body {
   line-height: 25px;
 }
 
-input:checked ~ .text {
+#content-1:checked ~ .text {
+  display: block;
+}
+#content-2:checked ~ .text {
+  display: block;
+}
+#content-3:checked ~ .text {
+  display: block;
+}
+#content-4:checked ~ .text {
   display: block;
 }
 
 li:hover {
+  background-color: rgb(66, 152, 219);
+  color: white;
+}
+body:focus li {
   background-color: rgb(66, 152, 219);
   color: white;
 }

@@ -120,8 +120,8 @@ body {
 
 input:checked ~ .overlay-2 {
   display: block;
-  width: 2000px;
-  height: 2000px;
+  width: 3000px;
+  height: 3000px;
 }
 
 input:checked ~ .icon-down {
