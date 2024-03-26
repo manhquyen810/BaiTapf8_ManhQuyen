@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài tập web</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-wrapper">
+      <!-- 1 -->
+      <nav class="header-content-top">
+        <!-- 1.1 -->
+        <div class="header-title">
+          <a href="#">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
+              class="header-logo"
+            />
+          </a>
+        </div>
+        <!-- 1.2 -->
+        <ul class="header-menu">
+          <li>
+            <input
+              type="checkbox"
+              name="choose-list"
+              id="choose-1"
+              hidden
+              checked
+            />
+            <label for="choose-1">
+              <a href="#">Home</a>
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="choose-list" id="choose-2" hidden />
+            <label for="choose-2">
+              <a href="#">Menu</a>
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="choose-list" id="choose-3" hidden />
+            <label for="choose-3">
+              <a href="#">Service</a>
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="choose-list" id="choose-4" hidden />
+            <label for="choose-4">
+              <a href="#">Shop</a>
+            </label>
+          </li>
+        </ul>
+        <!-- 1.3 -->
+        <div class="header-search">
+          <span class="icon-search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input type="text" placeholder="Search" />
+          <span class="line"></span>
+          <span class="icon-shop"
+            ><i class="fa-solid fa-basket-shopping"></i
+          ></span>
+          <span class="icon-shop-number">3</span>
+        </div>
+      </nav>
+      <!-- 2 -->
+      <div class="header-content-bottom">
+        <!-- 2.1 -->
+        <div class="header-title-little">
+          <h3 class="little-top">More than Faster</h3>
+          <span class="icon-cherry"
+            ><img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/strawberry.svg"
+          /></span>
+        </div>
+        <!-- 2.2 -->
+        <div class="header-title-image">
+          <!-- 2.2.1 -->
+          <div class="header-title-big">
+            <h1 class="title-big">
+              Groceries delivered in as little as
+              <span class="title-time">2 hours</span>
+            </h1>
+            <p class="text-big">
+              Grocen atssures fresh grocery every morning to your family without
+              getting out in this pandemic.
+            </p>
+            <div class="header-btn">
+              <button class="btn-1"><a href="#">Order Now</a></button>
+              <span class="icon-replay"
+                ><img
+                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/button-play.svg"
+              /></span>
+              <p class="btn-text-1">Order Process</p>
+            </div>
+          </div>
+          <!-- 2.2.2 -->
+          <div class="header-image-big">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/header-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
