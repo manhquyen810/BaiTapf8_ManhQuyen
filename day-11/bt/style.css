@@ -298,8 +298,8 @@ body {
   border-radius: 20px;
   margin-top: 40px;
   z-index: 0;
-  /* transform: translateX 1s ease;
-  transform-origin: bottom; */
+  transform: rotate 2s ease;
+  transform-origin: top;
 }
 .container-1 .content-1-list .press-1 .content-1 {
   position: absolute;
@@ -313,6 +313,7 @@ body {
   /* display: none; */
 }
 .container-1 .content-1-list .press-1:hover .sank-1 {
+  rotate: -5deg;
 }
 
 .container-1 .content-1-list .press-1 .content-1 .icon-list-1 {
