@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài tập web - Responsive</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <!-- 1 -->
+      <nav class="header-content-top">
+        <!-- 1.1 -->
+        <a href="#">
+          <img
+            src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
+            class="header-logo"
+          />
+        </a>
+        <!-- 1.2 -->
+        <input
+          type="checkbox"
+          name="header-menu-search"
+          id="click-menu"
+          hidden
+        />
+        <nav class="header-menu">
+          <ul class="menu-list">
+            <li>
+              <input type="radio" name="choose-list" id="home" hidden checked />
+              <label for="home"><a href="#">Home</a></label>
+            </li>
+
+            <li>
+              <input type="radio" name="choose-list" id="menu" hidden />
+              <label for="menu"><a href="#">Menu</a></label>
+            </li>
+
+            <li>
+              <input type="radio" name="choose-list" id="service" hidden />
+              <label for="service"><a href="#">Service</a></label>
+            </li>
+
+            <li>
+              <input type="radio" name="choose-list" id="shop" hidden />
+              <label for="shop"><a href="#">Shop</a></label>
+            </li>
+          </ul>
+        </nav>
+        <!-- 1.3 -->
+        <div class="header-search">
+          <span class="icon-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="text" placeholder="Search" />
+          <span class="line"></span>
+          <span class="icon-shop">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </span>
+          <span class="icon-shop-number">2</span>
+        </div>
+
+        <button class="btn menu-toggle">
+          <label for="click-menu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </button>
+      </nav>
+
+      <header class="header-content-bottom">
+        <!-- 2.1 -->
+        <div class="header-title-little">
+          <h3 class="little-top">More than Faster</h3>
+          <span class="icon-cherry"
+            ><img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/strawberry.svg"
+          /></span>
+        </div>
+
+        <!-- 2.2 -->
+        <div class="header-title-image">
+          <!-- 2.2.1 -->
+          <div class="header-title-big">
+            <h1 class="title-big">
+              Groceries delivered in as little as
+              <span class="title-time">2 hours</span>
+            </h1>
+            <p class="text-big">
+              Grocen atssures fresh grocery every morning to your family without
+              getting out in this pandemic.
+            </p>
+            <div class="header-btn">
+              <button class="btn-1"><a href="#">Order Now</a></button>
+              <span class="icon-replay"
+                ><img
+                  src="https://hoanganf8.github.io/htmlcss_project01/assets/images/button-play.svg"
+              /></span>
+              <p class="btn-text-1">Order Process</p>
+            </div>
+          </div>
+          <!-- 2.2.2 -->
+          <div class="header-image-big">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/header-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+    </header>
+
+    <!-- Section-1 -->
+    <section class="container-1">
+      <!-- 1 -->
+      <div class="text-1">
+        <h5 class="text-1-title">What we Serve</h5>
+        <h2 class="text-1-title-big">
+          Fruit And Vegetable Delivered To Your Home
+        </h2>
+      </div>
+      <!-- 2 -->
+      <div class="content-1-list">
+        <div class="press-1">
+          <div class="sank-1"></div>
+          <div class="content-1">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic1.svg"
+              class="icon-list-1"
+            />
+            <div class="press-1-text">
+              <h3>Free shipping</h3>
+              <p>Enjoy Order in a hand using the fresness of groceries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="press-1">
+          <div class="sank-1"></div>
+          <div class="content-1">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic2.svg"
+              class="icon-list-2"
+            />
+            <div class="press-1-text">
+              <h3>15 days returns</h3>
+              <p>Order in a handy way using the freshness of the groceries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="press-1">
+          <div class="sank-1"></div>
+          <div class="content-1">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/service-ic3.svg"
+              class="icon-list-3"
+            />
+            <div class="press-1-text">
+              <h3>Secure checkout</h3>
+              <p>If you get rotten items - return immediately to us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-2 -->
+    <section class="content-2-list">
+      <div class="content-2-image">
+        <img
+          src="https://hoanganf8.github.io/htmlcss_project01/assets/images/feat.png"
+        />
+      </div>
+      <div class="content-2-text">
+        <h5>WHY CHOOSE US</h5>
+        <h2>Find Favorites And Discover New Ones</h2>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis
+          praesen voluptatum deleniti.
+        </p>
+        <button class="btn-2"><a href="#">Explore Now</a></button>
+      </div>
+    </section>
+
+    <!-- section-3 -->
+    <section class="content-3-list">
+      <div class="content-3-text">
+        <h5>HOME DELIVERY</h5>
+        <h2>Sit At Home We Will Take Care Your Order</h2>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos
+        </p>
+        <button class="btn-3"><a href="#">Explore Now</a></button>
+      </div>
+      <div class="content-3-image">
+        <img
+          src="https://hoanganf8.github.io/htmlcss_project01/assets/images/feat2.png"
+        />
+      </div>
+    </section>
+
+    <!-- section-4 -->
+    <section class="content-4-list">
+      <div class="content-4-image">
+        <img
+          src="https://hoanganf8.github.io/htmlcss_project01/assets/images/mobile.svg"
+        />
+      </div>
+      <div class="content-4-text">
+        <h5>Download our app</h5>
+        <h2>Get The Groceries App Order More Easily.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut.
+        </p>
+        <div class="btn-list">
+          <a class="btn-4"
+            ><span
+              ><img
+                src="https://hoanganf8.github.io/htmlcss_project01/assets/images/apple.svg"
+                alt="" /></span
+            >App Store</a
+          >
+          <a class="btn-4"
+            ><span
+              ><img
+                src="https://hoanganf8.github.io/htmlcss_project01/assets/images/playstore.svg"
+                alt="" /></span
+            >Play Store</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -90,10 +90,16 @@ body {
   padding: 12px 66px 12px 44px;
   margin-top: 3px;
   border: none;
+  outline: 0;
 }
 
-.header-content-top .header-search input[type="text"]:valid {
-  font-size: 20px;
+.header-content-top .header-search input[type="text"]::placeholder {
+  font-size: 15px;
+  color: black;
+  transition: 0.5s ease;
+}
+.header-content-top .header-search input[type="text"]:focus::placeholder {
+  opacity: 0;
 }
 
 .header-content-top .header-search .line {
