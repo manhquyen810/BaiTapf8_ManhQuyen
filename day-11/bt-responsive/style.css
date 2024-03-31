@@ -861,15 +861,17 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    height: 1000px;
   }
 
   .content-4-list .content-4-image img {
-    max-width: 500px;
-    height: auto;
-    margin: 500px 0 0 0;
+    max-width: 300px;
+    max-height: 400px;
+    margin: 50px 0 0 0;
   }
 
   .content-4-list .content-4-text {
+    margin-top: 20px;
   }
 
   .content-4-list .content-4-text h5 {
@@ -885,11 +887,126 @@ body {
     font-size: 12px;
   }
 
-  .content-4-list .content-4-text .btn-4 {
-    padding: 10px 30px;
+  .content-4-list .content-4-text .btn-list .btn-4 {
+    padding: 30px 20px 30px 75px;
   }
 
   .content-4-list .content-4-text .btn-4 a {
+    font-size: 12px;
+  }
+}
+
+.content-foot {
+  position: relative;
+  height: auto;
+}
+
+.content-foot .foot-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 80px 120px 0 120px;
+  list-style: none;
+}
+
+.content-foot .foot-list .foot-1 {
+  width: 20%;
+}
+
+.content-foot .foot-list .foot-1 p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: gray;
+}
+
+.content-foot .foot-list .foot-2,
+.foot-3 {
+  margin-left: 100px;
+  width: 10%;
+}
+
+.content-foot .foot-list .foot-2 h5,
+.foot-3 h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.content-foot .foot-list .foot-2 .foot-menu,
+.foot-3 .foot-menu {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.content-foot .foot-list .foot-2 .foot-menu li,
+.foot-3 .foot-menu li {
+  line-height: 40px;
+}
+
+.content-foot .foot-list .foot-2 .foot-menu a,
+.foot-3 .foot-menu a {
+  text-decoration: none;
+  color: gray;
+  font-size: 16px;
+}
+
+.content-foot .foot-list .foot-2 .foot-menu li:hover a,
+.foot-3 .foot-menu li:hover a {
+  color: black;
+}
+
+.content-foot .foot-list .foot-4 {
+  width: 20%;
+}
+.content-foot .foot-list .foot-4 h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.content-foot .foot-list .foot-4 p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+@media screen and (max-width: 991.78px) {
+  .content-foot {
+    margin-left: 50px;
+  }
+  .content-foot .foot-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-foot .foot-list .foot-1 {
+    width: 100%;
+  }
+
+  .content-foot .foot-list .foot-1 p {
+    font-size: 14px;
+  }
+  .content-foot .foot-list .foot-2,
+  .foot-3 {
+    margin-left: 0;
+    width: 20%;
+    margin-top: 30px;
+  }
+
+  .content-foot .foot-list .foot-2 h5,
+  .foot-3 h5 {
+    font-size: 18px;
+  }
+
+  .content-foot .foot-list .foot-2 .foot-menu a,
+  .foot-3 .foot-menu a {
+    font-size: 14px;
+  }
+
+  .content-foot .foot-list .foot-4 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .content-foot .foot-list .foot-4 h5 {
+    font-size: 18px;
+  }
+  .content-foot .foot-list .foot-4 p {
     font-size: 14px;
   }
 }
