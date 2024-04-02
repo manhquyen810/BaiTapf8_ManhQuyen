@@ -11,7 +11,7 @@ body {
 .header-wrapper {
   /* border: 1px solid red; */
   /* margin: 0 120px 0 120px; */
-  height: 750px;
+  height: 800px;
 }
 
 .header-content-top {
@@ -482,7 +482,7 @@ body {
   z-index: 0;
   transform: rotate 5s ease;
   transform-origin: top;
-  visibility: hidden;
+  opacity: 0;
 }
 .container-1 .content-1-list .press-1 .content-1 {
   position: absolute;
@@ -496,7 +496,7 @@ body {
 }
 .container-1 .content-1-list .press-1:hover .sank-1 {
   rotate: -5deg;
-  visibility: visible;
+  opacity: 1;
 }
 
 .container-1 .content-1-list .press-1 .content-1 .icon-list-1 {
