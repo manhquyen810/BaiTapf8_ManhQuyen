@@ -348,8 +348,8 @@
   border: 1px solid blue;
 }
 
-/* .import-register .form-resgister .import-5 input:focus + .in,
-.import-5 input:not(:placeholder-shown) + .in, */
+.import-register .form-resgister .import-5 input:focus + .in,
+.import-5 input:not(:placeholder-shown) + .in,
 .import-6 input:focus + .in,
 .import-6 input:not(:placeholder-shown) + .in,
 .import-7 input:focus + .in,
@@ -403,7 +403,6 @@
   font-weight: 700;
 }
 
-/* Hiển thị phần login khi input radio "Login" được chọn */
 #login:checked ~ .wrapper-import .import-login {
   visibility: visible;
   opacity: 1;
