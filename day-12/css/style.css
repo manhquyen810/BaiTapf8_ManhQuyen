@@ -70,6 +70,7 @@
   line-height: 50px;
   color: white;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 
 .wrapper-infor .click-reserve .click-register {
@@ -82,6 +83,7 @@
   line-height: 50px;
   color: white;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 
 .wrapper-infor .click-reserve .click-login:focus {
@@ -97,18 +99,24 @@
 }
 
 .wrapper-import .box {
-  margin-top: 70px;
+  margin-top: 20px;
   background: white;
-  height: 630px;
   display: block;
   border-radius: 20px;
 }
 
 .wrapper-import .import-login {
+  margin-top: 70px;
+  height: 630px;
   padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 3s ease, opacity 3s ease, visibility 3s ease;
 }
 
 .wrapper-import .import-login img {
@@ -207,6 +215,8 @@
   box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
   color: white;
   font-size: 16px;
+  font-weight: 700;
+  transition: 1s ease;
   cursor: pointer;
 }
 
@@ -214,23 +224,34 @@
   background-color: #625dfad7;
 }
 .import-login .title-social {
+  width: 100%;
+  position: relative;
   margin-top: 28px;
   font-size: 15px;
   font-weight: 600;
+  text-align: center;
 }
 
 .import-login .title-social::before {
-  padding: 10px;
-  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
   display: inline-block;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.514);
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
 
 .import-login .title-social::after {
-  padding: 10px;
-  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
   display: inline-block;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.486);
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 
 .import-login .press-link {
@@ -239,9 +260,177 @@
 
 .import-login .press-link a {
   padding: 5px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
 }
-.import-login .press-link a:hover {
-  transform: translateY(20%);
+
+.import-login .press-link a svg {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
+.import-login .press-link a svg:hover {
+  transform: translateY(-20%);
+}
+
+.wrapper-import .import-register {
+  height: 730px;
+  margin-bottom: 20px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 3s ease, opacity 3s ease, visibility 3s ease;
+}
+
+.wrapper-import .import-register img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: -12%;
+  top: 0;
+}
+
+.import-register .title-account {
+  font-size: 25px;
+}
+
+.import-register .form-resgister {
+  margin-top: 67px;
+  width: 100%;
+}
+.import-register .form-resgister .import-5,
+.import-6,
+.import-7,
+.import-8 {
+  position: relative;
+}
+
+.import-6,
+.import-7,
+.import-8 {
+  margin-top: 30px;
+}
+
+.import-register .form-resgister .import-5 .in,
+.import-6 .in,
+.import-7 .in,
+.import-8 .in {
+  position: absolute;
+  left: 21px;
+  top: 50%;
+  color: gray;
+  font-weight: 600;
+  user-select: none;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
+.import-register .form-resgister .import-5 input[type="text"],
+.import-6 input[type="text"],
+.import-7 input[type="text"],
+.import-8 input[type="text"] {
+  height: 54px;
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.import-register .form-resgister .import-5 input[type="text"]:focus,
+.import-6 input[type="text"]:focus,
+.import-7 input[type="text"]:focus,
+.import-8 input[type="text"]:focus {
+  border: 1px solid blue;
+}
+
+/* .import-register .form-resgister .import-5 input:focus + .in,
+.import-5 input:not(:placeholder-shown) + .in, */
+.import-6 input:focus + .in,
+.import-6 input:not(:placeholder-shown) + .in,
+.import-7 input:focus + .in,
+.import-7 input:not(:placeholder-shown) + .in,
+.import-8 input:focus + .in,
+.import-8 input:not(:placeholder-shown) + .in {
+  top: 0;
+  padding: 10px;
+  display: inline-block;
+  background-color: white;
+  font-size: 12px;
+}
+
+.import-register .form-resgister .import-9 {
+  width: 100%;
+  margin-top: 28px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.623);
+  cursor: pointer;
+}
+
+.import-register .form-resgister .import-10 {
+  margin-top: 28px;
+}
+
+.import-register .form-resgister .import-10 .btn-register {
+  width: 100%;
+  height: 54px;
+  border-radius: 10px;
+  background-color: #23d2e2;
+  box-shadow: 4px 7px 12px 0 rgba(35, 210, 226, 0.2);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.import-register .form-resgister .import-10 .btn-register:hover {
+  background-color: #23d2e29a;
+}
+
+.import-register .title-check-infor {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.import-register .title-check-infor .contact a {
+  text-decoration: none;
+  color: #23d2e2;
+  font-weight: 700;
+}
+
+/* Hiển thị phần login khi input radio "Login" được chọn */
+#login:checked ~ .wrapper-import .import-login {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-30%);
+}
+
+#register:checked ~ .wrapper-import .import-register {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-30%);
+}
+
+#login:checked ~ .wrapper-infor .click-login {
+  background-color: white;
+  color: black;
+}
+
+#register:checked ~ .wrapper-infor .click-register {
+  background-color: white;
+  color: black;
+}
+
+/* #register:checked ~ .wrapper-import #res-email:focus + .in,
+.import-5 #res-email:not(:placeholder-shown) + .in {
+  top: 0;
+  padding: 10px;
+  display: inline-block;
+  background-color: white;
+  font-size: 12px;
+} */

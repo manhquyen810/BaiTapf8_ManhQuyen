@@ -16,8 +16,11 @@
   <body>
     <div class="wrapper">
       <!-- 1 -->
+      <input type="radio" name="service" id="login" hidden checked/>
+      <input type="radio" name="service" id="register" hidden />
       <div class="wrapper-infor">
         <!-- 1.1 -->
+        
           <div class="logo">
             <svg class="icon-logo-vikinger">
               <path
@@ -37,12 +40,12 @@
         <!-- 1.3 -->
         <div class="click-reserve">
           <div class="click-login">
-            <input type="radio" name="service" id="login"  hidden/>
+            
             <label for="login">Login</label>
           </div>
           
           <div class="click-register">
-            <input type="radio" name="service" id="register"  hidden/>
+            
             <label for="register">Register</label>
           </div>
           
@@ -68,7 +71,7 @@
 
               <div class="import-3">
                 <div class="import-check">
-                  <input type="checkbox" id="remember" checked />
+                  <input type="checkbox" id="remember" />
                   <label for="remember">Remember me</label>
                 </div>
                 <a href="#" class="check-pass">Forgot Password?</a>
@@ -92,6 +95,44 @@
             </div>
           </div>
 
+          <div class="box import-register">
+            <img src="https://odindesignthemes.com/vikinger/img/landing/rocket.png" alt="logo-rocket" />
+            <h2 class="title-account">Create your Account</h2>
+
+            <form class="form-resgister">
+              <div class="import-5">
+                <input type="text" id="res-email" name="res-e" placeholder=" "/>
+                <label for="res-email" class="in">Your Email</label>
+                
+              </div>
+
+              <div class="import-6">
+                <input type="text" id="res-user" name="res-u" placeholder=" "/>
+                <label for="res-user" class="in">Username</label>
+              </div>
+
+              <div class="import-7">
+                <input type="text" id="res-password" name="res-p" placeholder=" "/>
+                <label for=res-password" class="in">Password</label>
+              </div>
+
+              <div class="import-8">
+                <input type="text" id="log-password" name="log-p" placeholder=" "/>
+                <label for=log-password" class="in">Repeat Password</label>
+              </div>
+
+              <div class="import-9">
+                  <input type="checkbox" id="send" />
+                  <label for="send">Send me news and updates via email</label>
+              </div>
+
+              <div class="import-10">
+                <button class="btn-register">Register Now!</button>
+              </div>
+            </form>
+
+            <p class="title-check-infor">You'll receive a confirmation email in your inbox with a link to activate your account. If you have any problems, <span class="contact"><a href="#">contact us!</a></span></p>
+          </div>
       </div>
       
     </div>
