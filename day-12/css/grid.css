@@ -135,13 +135,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
   --column-offset-number: 12;
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .col-sm-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+  
     --column-number: 1;
   }
 
@@ -179,13 +175,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
     --column-number: 12;
   }
 
-  /* 2 */
+  
   .offset-sm-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-offset-number: 1;
   }
 
@@ -226,11 +218,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 
 @media screen and (min-width: 768px) {
   .col-md-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-number: 1;
   }
 
@@ -268,13 +256,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
     --column-number: 12;
   }
 
-  /* 2 */
+
   .offset-md-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+   
     --column-offset-number: 1;
   }
 
@@ -315,11 +299,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 
 @media screen and (min-width: 992px) {
   .col-lg-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-number: 1;
   }
 
@@ -363,11 +343,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
     padding: 0;
   }
   .col-xl-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-number: 1;
   }
 
@@ -404,14 +380,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
   .col-xl-12 {
     --column-number: 12;
   }
-
-  /* 2 */
+ 
   .offset-xl-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-offset-number: 1;
   }
 
@@ -452,11 +423,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 
 @media screen and (min-width: 1400px) {
   .col-xxl-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-number: 1;
   }
 
@@ -494,13 +461,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
     --column-number: 12;
   }
 
-  /* 2 */
+  
   .offset-xxl-1 {
-    /* 
-    number = 1 
-    cell-number = 12
-    width = (1/ cell-number * 100) * number
-    */
+    
     --column-offset-number: 1;
   }
 
@@ -537,4 +500,4 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
   .offset-xxl-12 {
     --column-offset-number: 12;
   }
-}
+} */

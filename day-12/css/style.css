@@ -71,6 +71,7 @@
   color: white;
   font-weight: 600;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .wrapper-infor .click-reserve .click-register {
@@ -84,6 +85,7 @@
   color: white;
   font-weight: 600;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .wrapper-infor .click-reserve .click-login:focus {
@@ -116,7 +118,7 @@
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: transform 3s ease, opacity 3s ease, visibility 3s ease;
+  transition: transform 3s ease, opacity 0.3s ease, visibility 3s ease;
 }
 
 .wrapper-import .import-login img {
@@ -281,7 +283,7 @@
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: transform 3s ease, opacity 3s ease, visibility 3s ease;
+  transition: transform 3s ease, opacity 0.3s ease, visibility 3s ease;
 }
 
 .wrapper-import .import-register img {
@@ -433,3 +435,45 @@
   background-color: white;
   font-size: 12px;
 } */
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  .wrapper-infor {
+    position: static;
+  }
+
+  .wrapper-infor .text-1 {
+    display: none;
+  }
+
+  .wrapper-infor .click-reserve {
+    margin-top: 30px;
+  }
+  .wrapper-import {
+    position: static;
+  }
+
+  .wrapper-import .box img {
+    display: none;
+  }
+  .wrapper-import .import-login {
+  }
+
+  #login:checked ~ .wrapper-import .import-login {
+    transform: translateX(0);
+  }
+
+  .wrapper-import .import-register {
+    width: 484px;
+    margin: 50px 0 50px 0;
+  }
+  #register:checked ~ .wrapper-import .import-register {
+    transform: translateX(0);
+  }
+}
