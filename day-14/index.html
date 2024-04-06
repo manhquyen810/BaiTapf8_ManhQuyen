@@ -36,10 +36,10 @@
 
         <div class="btn-light">
           <label for="light-black" class="light btn-sun">
-            <i class="fa-regular fa-sun"></i>
+            <span class="sp-sun"><i class="fa-regular fa-sun"></i></span>
           </label>
           <label for="light-white" class="light btn-moon">
-            <i class="fa-regular fa-moon"></i>
+            <span class="sp-moon"><i class="fa-regular fa-moon"></i></span>
           </label>
         </div>
 
@@ -71,25 +71,211 @@
           <input type="radio" id="tab2" name="tabs" hidden />
           <input type="radio" id="tab3" name="tabs" hidden />
           <div class="list-image">
-            <img src="./image/mumbai-canh-1.jpeg" alt="" />
-            <img src="./image/mumbai-canh-2.jpg" alt="" />
-            <img src="./image/mumbai-canh-3.jpg" alt="" />
+            <img src="./image/mumbai-canh-1.jpeg" class="image-tab1" />
+            <img src="./image/mumbai-canh-2.jpg" class="image-tab2" />
+            <img src="./image/mumbai-canh-3.jpg" class="image-tab3" />
           </div>
           <div class="select-tab">
-            <span class="btn-tab"></span>
-            <span class="btn-tab"></span>
-            <span class="btn-tab"></span>
+            <label for="tab1" class="btn-tab">
+              <span class="sp-1"></span>
+            </label>
+            <label for="tab2" class="btn-tab">
+              <span class="sp-2"></span>
+            </label>
+            <label for="tab3" class="btn-tab">
+              <span class="sp-3"></span>
+            </label>
           </div>
         </div>
 
-        <div class="content-3 aos-init aos-animate">
+        <div class="content-3">
           <span>Tại sao nên chọn Stravel</span>
           <h3>Trải nghiệm bậc nhất</h3>
           <p>
             Chúng tôi hợp tác với những địa điểm nghỉ dưỡng có trải nghiệm bậc
             nhất để đem lại một kỳ nghỉ tuyệt vời cho bạn cùng người thân
           </p>
-          <a href="#" class="btn">Tìm hiểu thêm về Stravel</a>
+          <a href="#" class="btn-stravel">Tìm hiểu thêm về Stravel</a>
+        </div>
+      </section>
+
+      <section class="wrapper-mid-2">
+        <div class="title-mid">
+          <span>Những điểm đến ở Mumbai</span>
+          <h1>Những điểm du lịch bậc nhất</h1>
+        </div>
+
+        <div class="content-4">
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-1.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Ấn Độ môn</h3>
+              <p>
+                được xây dựng vào năm 1931, còn có tên gọi khác là “bia kỷ niệm
+                chiến sĩ Ấn Độ”
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-2.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Tòa nhà hình trứng</h3>
+              <p>
+                nghệ thuật kiến trúc thị giác kết hợp với cách sản xuất, sử dụng
+                và tái tạo năng lượng thông minh
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-3.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Vườn quốc gia Sanjay Gandhi</h3>
+              <p>
+                bao gồm loài bướm đêm Atlas – bướm đêm lớn nhất thế giới, cây
+                hoa Karvi 7 năm nở hoa một lần…
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-4.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Trung tâm triễn lãm Jehanggir</h3>
+              <p>
+                khu vực triển lãm hàng đầu ở Mumbai dành cho nền mỹ thuật Ấn Độ
+                đương đại
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-5.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Hang động Elephanta</h3>
+              <p>
+                lưu giữ nhiều kiến trúc chạm khắc tinh xảo và chúng đã xuất hiện
+                ở đây từ thế kỷ thứ 5 đến thứ 8
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-6.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Lonavala và Khandala</h3>
+              <p>
+                khu nghỉ dưỡng rất nổi tiếng, nằm giữa đường cao tốc Mumbai –
+                Pune.
+              </p>
+              <a href="#" style="margin-top: 70px"
+                >Đọc thêm <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-7.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Thành phố Pune</h3>
+              <p>
+                Giáo dục, nghệ thuật và âm nhạc là trọng tâm tại thành phố có
+                nền văn hóa phong phú lâu đời này
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="https://stravelhtml.vercel.app/mumbai/images/des-8.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="content-infor">
+              <h3>Thành phố Nashik</h3>
+              <p>
+                là trung tâm hành hương lớn của người Hindu. Nashik có sự pha
+                trộn của nét cổ xưa và hiện đại
+              </p>
+              <a href="#">Đọc thêm <i class="fas fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-mid-3">
+        <div class="title-mid-2">
+          <span>Dịch vụ</span>
+          <h1>Nâng cao trải nghiệm</h1>
+        </div>
+        <div class="content-5">
+          <div class="content-infor-2">
+            <span><i class="fas fa-globe"></i></span>
+            <h3>Rộng khắp thế giới</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="content-infor-2">
+            <span><i class="fas fa-hiking"></i></span>
+            <h3>Những cuộc phiêu lưu</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="content-infor-2">
+            <span><i class="fas fa-utensils"></i></span>
+
+            <h3>Dịch vụ ăn uống</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="content-infor-2">
+            <span><i class="fas fa-hotel"></i></span>
+            <h3>Nghỉ dưỡng cao cấp</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="content-infor-2">
+            <span><i class="fas fa-wallet"></i></span>
+            <h3>Giá Tốt nhất</h3>
+            <p>Some text...</p>
+          </div>
+          <div class="content-infor-2">
+            <span><i class="fas fa-headset"></i></span>
+            <h3>Hỗ trợ 24/7</h3>
+            <p>Some text...</p>
+          </div>
         </div>
       </section>
     </div>
