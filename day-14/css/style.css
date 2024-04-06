@@ -1,0 +1,252 @@
+.homepage {
+  font-family: Nunito, sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
+  background-color: white;
+}
+
+.header-page {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 150px;
+  background-color: #212121;
+  opacity: 0.9;
+  z-index: 99;
+}
+
+.header-page a {
+  text-decoration: none;
+}
+
+.header-page .header-big {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.header-page .header-big span {
+  color: #ffa500;
+}
+
+.header-page .menu .menu-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0 60px 0 200px;
+  /* border: 1px solid red; */
+}
+
+.header-page .menu .menu-list li a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  opacity: 0.85;
+}
+
+.header-page .menu .menu-list li a:hover {
+  color: #ffa500;
+}
+
+.header-page .btn-light {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ffa500;
+  margin-left: 0;
+  overflow: hidden;
+}
+
+.header-page .btn-light .light {
+  color: #ffa500;
+  font-size: 22px;
+}
+
+.header-page .btn-light .btn-sun {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10%;
+  left: 13%;
+  opacity: 1;
+  z-index: 2;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.header-page .btn-light .btn-moon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 4%;
+  left: 25%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* #light-black:checked {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#light-black:checked ~ .homepage {
+  background-color: black;
+}
+
+#light-white:checked {
+  visibility: visible;
+  opacity: 1;
+}
+
+#light-white:checked ~ .homepage {
+  background-color: white;
+} */
+
+.header-page .btn-order {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  color: #212121;
+  background-color: #ffa500;
+  border: 2px solid #ffa500;
+  border-radius: 20px;
+}
+
+.header-page .btn-order:hover {
+  background-color: #212121;
+  color: #ffa500;
+}
+
+.wrapper-top {
+  margin: 90px 70px;
+  width: 90%;
+  height: 80vh;
+  padding: 30px 126px;
+  background: url(../image/mumbai.jpeg) no-repeat 0 / cover;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.wrapper-top .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 150px;
+}
+
+.wrapper-top .content .title-mumbai {
+  font-size: 70px;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffa500;
+}
+
+.wrapper-top .content .title-big-top {
+  font-size: 80px;
+  color: white;
+}
+
+.wrapper-top .content .text-city {
+  padding: 20px 160px;
+  font-size: 17px;
+  line-height: 30px;
+  color: white;
+  opacity: 0.8;
+}
+
+.wrapper-top .content .btn-infor-add {
+  width: 180px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #ffa500;
+  color: #212121;
+  border-radius: 30px;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid #ffa500;
+}
+
+.wrapper-top .content .btn-infor-add:hover {
+  background-color: transparent;
+  color: #ffa500;
+}
+
+.wrapper-top-2 {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 50px;
+  height: 20vh;
+  margin: -150px 140px 10px 140px;
+  background-color: #212121;
+  box-shadow: 0 0 10px #212121;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.wrapper-top-2 .title-big-top-2 {
+  font-size: 42px;
+  width: 50%;
+  color: #ffa500;
+}
+
+.wrapper-top-2 .btn-order {
+  width: 60%;
+  height: 60px;
+  margin-top: 5vh;
+  background-color: #ffa500;
+  color: #212121;
+  border: 1px solid #ffa500;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.wrapper-top-2 .btn-order:hover {
+  background-color: transparent;
+  color: #ffa500;
+}
+
+.wrapper-mid {
+  margin-top: 50px;
+  padding: 30px 126px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper-mid .content-2 {
+  position: relative;
+  width: 60%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.wrapper-mid .content-2 .list-image {
+  /* position: absolute; */
+  width: 100%;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+.list-image img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+}
