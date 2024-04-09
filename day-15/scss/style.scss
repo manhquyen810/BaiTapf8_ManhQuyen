@@ -1,21 +1,30 @@
-body {
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.container {
   font-family: "Sofia Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+
   width: 1500px;
   height: 1000px;
   margin: 0 auto;
   border: 1px solid red;
   .sidebar {
     width: 260px;
-    height: 100%;
-    border: 1px solid blue;
+    height: 1000px;
+
     padding: 50px;
+
     .title-big {
       width: 100px;
       height: 46px;
       position: relative;
       overflow: hidden;
-      border: 1px solid yellow;
-
+      cursor: pointer;
       .bg-c {
         position: absolute;
         width: 46px;
@@ -41,6 +50,97 @@ body {
         width: 18px;
         height: 4px;
         background-color: black;
+      }
+    }
+
+    .title-small {
+      width: 111px;
+      height: 49px;
+      margin-top: 50px;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 48px;
+    }
+
+    .menu {
+      position: relative;
+      margin-top: 50px;
+      height: 700px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      .menu-list {
+        float: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        img {
+          width: 23px;
+          height: 23px;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: 400;
+        }
+        a:hover {
+          color: gray;
+        }
+      }
+      .infor-help {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        bottom: 0;
+        .icon-chat {
+          display: inline-block;
+          width: 49px;
+          height: 49px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 18px;
+          background-color: rgba(128, 128, 128, 0.164);
+          border-radius: 50%;
+        }
+        .text-help {
+          text-decoration: none;
+          color: black;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .main {
+    padding: 50px 20px 50px 50px;
+    .selection {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 1151px;
+      height: 25px;
+      .select-1 {
+        .icon-find {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          font-size: 20px;
+        }
+        input {
+          margin-left: 5px;
+          width: 102px;
+          height: 23px;
+        }
+      }
+      .selection-2 {
+        display: flex;
+        align-items: center;
       }
     }
   }
