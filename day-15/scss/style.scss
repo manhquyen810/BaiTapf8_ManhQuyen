@@ -1,0 +1,47 @@
+body {
+  font-family: "Sofia Sans", sans-serif;
+  width: 1500px;
+  height: 1000px;
+  margin: 0 auto;
+  border: 1px solid red;
+  .sidebar {
+    width: 260px;
+    height: 100%;
+    border: 1px solid blue;
+    padding: 50px;
+    .title-big {
+      width: 100px;
+      height: 46px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid yellow;
+
+      .bg-c {
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #f4de4d;
+      }
+      .bg-c::before {
+        content: "C";
+        position: absolute;
+        right: 10%;
+        top: 20%;
+      }
+      .bg-aped {
+        position: absolute;
+        top: 20%;
+        right: 2%;
+      }
+      .bg-aped::before {
+        content: " ";
+        position: absolute;
+        right: 10%;
+        width: 18px;
+        height: 4px;
+        background-color: black;
+      }
+    }
+  }
+}
