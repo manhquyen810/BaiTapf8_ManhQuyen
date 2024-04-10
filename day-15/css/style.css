@@ -12,7 +12,6 @@
   width: 1500px;
   height: 1000px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .container .sidebar {
   width: 260px;
@@ -202,6 +201,33 @@
 .container .main .selection .selection-3 a:hover {
   color: grey;
   transition: 1s ease;
+}
+.container .main .content {
+  margin-top: 60px;
+  width: 1151px;
+  height: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container .main .content .content-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 564px;
+  height: 398px;
+}
+.container .main .content .content-1 a img {
+  width: 564px;
+  height: 188px;
+}
+.container .main .content .content-2 {
+  display: flex;
+  gap: 20px;
+}
+.container .main .content .content-2 a img {
+  width: 271px;
+  height: 398px;
 }
 
 /*# sourceMappingURL=style.css.map */

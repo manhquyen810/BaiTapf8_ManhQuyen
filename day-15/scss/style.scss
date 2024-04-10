@@ -12,7 +12,6 @@
   width: 1500px;
   height: 1000px;
   margin: 0 auto;
-  border: 1px solid red;
   .sidebar {
     width: 260px;
     height: 1000px;
@@ -207,6 +206,39 @@
         a:hover {
           color: grey;
           transition: 1s ease;
+        }
+      }
+    }
+    .content {
+      margin-top: 60px;
+      width: 1151px;
+      height: 820px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .content-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 564px;
+        height: 398px;
+
+        a {
+          img {
+            width: 564px;
+            height: 188px;
+          }
+        }
+      }
+      .content-2 {
+        display: flex;
+        gap: 20px;
+        a {
+          img {
+            width: 271px;
+            height: 398px;
+          }
         }
       }
     }
