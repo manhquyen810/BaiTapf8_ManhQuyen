@@ -123,19 +123,85 @@
   height: 25px;
 }
 .container .main .selection .select-1 .icon-find {
-  display: inline-block;
   width: 25px;
-  height: 25px;
-  font-size: 20px;
+  height: auto;
+  line-height: 50px;
+  font-size: 19px;
 }
 .container .main .selection .select-1 input {
   margin-left: 5px;
   width: 102px;
-  height: 23px;
+  height: 25px;
+  border: none;
+  outline: 0;
+}
+.container .main .selection .select-1 input:valid {
+  font-size: 17px;
+  font-weight: 400;
 }
 .container .main .selection .selection-2 {
+  padding-left: 450px;
+  padding-right: 60px;
   display: flex;
   align-items: center;
+  gap: 43px;
+  list-style: none;
+}
+.container .main .selection .selection-2 li {
+  position: relative;
+}
+.container .main .selection .selection-2 li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.container .main .selection .selection-2 .select-product:before {
+  content: " ";
+  width: 65px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  bottom: -2px;
+}
+.container .main .selection .selection-2 .select-story:hover:before {
+  content: " ";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  bottom: -2px;
+  transition: 1s ease;
+}
+.container .main .selection .selection-2 .select-manu:hover:before {
+  content: " ";
+  width: 110px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  bottom: -2px;
+  transition: 1s ease;
+}
+.container .main .selection .selection-2 .select-packaging:hover:before {
+  content: " ";
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  bottom: -2px;
+  transition: 1s ease;
+}
+.container .main .selection .selection-3 {
+  display: flex;
+  gap: 40px;
+}
+.container .main .selection .selection-3 a {
+  font-size: 25px;
+  color: black;
+}
+.container .main .selection .selection-3 a:hover {
+  color: grey;
+  transition: 1s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
