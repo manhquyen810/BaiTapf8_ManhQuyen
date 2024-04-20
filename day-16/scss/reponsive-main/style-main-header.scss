@@ -1,0 +1,257 @@
+@import "../partials/mixin";
+
+@include screenDesktops {
+  body {
+    width: 1000px;
+    // border: 1px solid red;
+    .header-main {
+      width: 1000px;
+      padding: 0 30px;
+      .selection {
+        margin: 0;
+      }
+    }
+
+    .content-main {
+      padding-left: 60px;
+      gap: 30px;
+      .content-big {
+        width: 400px;
+        h3 {
+          font-size: 20px;
+        }
+        h2 {
+          width: 350px;
+          font-size: 35px;
+        }
+        p {
+          width: 300px;
+          height: 80px;
+
+          font-size: 16px;
+        }
+      }
+
+      .content-image-greenchop {
+        width: 600px;
+        height: 600px;
+        // border: 1px solid red;
+        .content-image {
+          .image-dia {
+            width: 400px;
+            height: 400px;
+            transform: translateY(30%);
+          }
+        }
+        .content-greenchop {
+          h2 {
+            width: 450px;
+            font-size: 140px;
+          }
+        }
+      }
+    }
+
+    .content-achievement {
+      padding: 0;
+      .content-big-2 {
+        h2 {
+          font-size: 35px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .content-box {
+        .elip {
+          width: 80px;
+          height: 80px;
+        }
+        .elip-1 {
+          position: absolute;
+          z-index: -1;
+          top: 5%;
+        }
+        .elip-2 {
+          position: absolute;
+          z-index: -1;
+          bottom: 25%;
+          right: 15%;
+        }
+        .box-achievement {
+          .box-1 {
+            width: 250px;
+          }
+          .box-2 {
+            width: 300px;
+          }
+          .box {
+            .box-logo {
+              width: 80px;
+              height: 80px;
+
+              svg {
+                width: 35px;
+                height: 35px;
+              }
+            }
+
+            h3 {
+              font-size: 35px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-product {
+      padding: 0 200px;
+      width: 1000px;
+
+      h2 {
+        font-size: 30px;
+      }
+      .product-list {
+        flex-wrap: nowrap;
+        position: relative;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+@include screenTablet {
+  body {
+    width: 800px;
+    // border: 1px solid red;
+    .header-main {
+      display: flex;
+      align-items: center;
+      width: 800px;
+      padding: 0 40px;
+      .selection {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 20px 0 auto;
+        position: relative;
+        .menu {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .list-out-6,
+        .list-out-7 {
+          display: none;
+        }
+      }
+      .hamberger {
+        display: block;
+        margin-left: auto;
+        label {
+          font-size: 30px;
+        }
+      }
+      #hamburger-check:checked ~ .selection .menu .menu-list {
+        display: block;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    .content-main {
+      padding-left: 70px;
+      gap: 20px;
+      .content-big {
+        width: 300px;
+        h3 {
+          font-size: 18px;
+        }
+        h2 {
+          width: 350px;
+          font-size: 30px;
+        }
+        p {
+          width: 300px;
+          height: 80px;
+
+          font-size: 15px;
+        }
+      }
+
+      .content-image-greenchop {
+        width: 500px;
+        height: 500px;
+        // border: 1px solid red;
+        .content-image {
+          .image-dia {
+            width: 300px;
+            height: 300px;
+            transform: translateY(30%);
+          }
+        }
+        .content-greenchop {
+          h2 {
+            width: 300px;
+            font-size: 100px;
+          }
+        }
+      }
+    }
+
+    .content-achievement {
+      .content-big-2 {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .content-box {
+        .elip {
+          width: 50px;
+          height: 50px;
+        }
+        .elip-1 {
+          top: 5%;
+        }
+        .elip-2 {
+          bottom: 30%;
+          right: 22%;
+        }
+        .box-achievement {
+          .box-1 {
+            width: 200px;
+          }
+          .box-2 {
+            width: 250px;
+          }
+          .box {
+            .box-logo {
+              width: 50px;
+              height: 50px;
+
+              svg {
+                width: 25px;
+                height: 25px;
+                text-align: center;
+              }
+            }
+
+            h3 {
+              font-size: 30px;
+            }
+            p {
+              width: 120px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

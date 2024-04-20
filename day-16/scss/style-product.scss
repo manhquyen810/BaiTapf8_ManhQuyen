@@ -236,11 +236,11 @@ body {
               text-decoration: none;
               color: $primaryColor;
               font-weight: 700;
-              background: var(--green-800-main, #46b20f);
-              border: 1px solid var(--green-800-main, #46b20f);
+              background: $boxColor;
+              border: 1px solid $boxColor;
             }
             a:hover {
-              color: var(--green-800-main, #46b20f);
+              color: $boxColor;
               background-color: $primaryColor;
               transition: 1s ease;
             }

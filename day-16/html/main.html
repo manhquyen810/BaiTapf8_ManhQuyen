@@ -9,14 +9,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/style-main.css" />
+    <link rel="stylesheet" href="../css/reponsive-main/grid.css" />
+    <link rel="stylesheet" href="../css/reponsive-main/style-main-header.css" />
+    <link
+      rel="stylesheet"
+      href="../css/reponsive-main/style-main-section.css"
+    />
     <title>Greenchop-Trang Chủ</title>
   </head>
   <body>
+    <!-- 1 -->
     <header class="header-main">
       <a href="#" class="header-logo">
         <img src="../image/bieutuong_chinh.png" alt="logo" />
       </a>
+      <input type="checkbox" id="hamburger-check" hidden />
       <nav class="selection">
         <ul class="menu">
           <li class="menu-list list-out-1">
@@ -38,11 +50,14 @@
           </li>
           <li class="menu-list list-out-2"><a href="#">Về Greenchop</a></li>
           <li class="menu-list list-out-3">
-            <a href="#">Sản Phẩm</a>
+            <a
+              href="https://manhquyen810.github.io/F8-K7-FullStack/day-16/html/product.html"
+              >Sản Phẩm</a
+            >
           </li>
           <li class="menu-list list-out-4"><a href="#">Tin tức</a></li>
           <li class="menu-list list-out-5"><a href="#">Liên hệ</a></li>
-          <li class="menu-list">
+          <li class="menu-list list-out-6">
             <a href="#" class="btn-header">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +85,7 @@
               </svg>
             </a>
           </li>
-          <li class="menu-list">
+          <li class="menu-list list-out-7">
             <a href="#" class="btn-header">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +113,16 @@
           </li>
         </ul>
       </nav>
+      <div class="hamberger">
+        <label for="hamburger-check">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
     </header>
+
+    <!-- 2 -->
     <section class="content-main">
-      <div class="content-big">
+      <article class="content-big">
         <h3>GreenChop: Tiện gấp dễ gắp</h3>
         <h2>AN TOÀN HƠN GIỮA MÙA COVID</h2>
         <p>
@@ -109,93 +131,28 @@
           mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn ngừa khả năng lây lan dịch
           bệnh và đảm bảo an toàn cho người dùng.
         </p>
-      </div>
-      <div class="content-image-greenchop">
+      </article>
+      <article class="content-image-greenchop">
         <div class="content-image">
-          <img src="../image/dia.png" alt="logo" class="image-dia" />
-          <!-- <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="510"
-          height="349"
-          viewBox="0 0 510 349"
-          fill="none"
-        >
-          <path
-            d="M507.912 345.342C507.237 346.287 505.95 346.511 504.991 345.857L411.414 282.513L370.779 255.174L370.712 255.319C370.547 255.654 370.129 255.752 369.824 255.544L307.145 212.934C306.927 212.785 306.912 212.503 307.064 212.304L137.57 97.691C137.421 97.6053 122.311 87.4781 102.39 73.8946C65.5769 48.7933 18.5842 16.1443 3.5677 2.99967L3.26701 2.71482C2.61066 2.15553 2.4818 1.17365 2.97214 0.454323L1.12967 3.15725C0.63933 3.87658 0.768182 4.85845 1.42801 5.43608L1.72523 5.7026C16.7417 18.8473 63.7379 51.5146 100.529 76.601C120.451 90.1845 135.579 100.308 135.71 100.397L305.225 215.025C305.07 215.206 305.088 215.507 305.306 215.655L367.985 258.265C368.29 258.473 368.708 258.375 368.873 258.04L368.94 257.895L409.575 285.235L503.152 348.578C504.108 349.214 505.394 348.99 506.073 348.064L509.027 344.011"
-            fill="black"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="377"
-          height="269"
-          viewBox="0 0 377 269"
-          fill="none"
-        >
-          <path
-            d="M0.797422 16.4699L1.09464 16.7365C16.1111 29.8811 63.1073 62.5485 99.8986 87.6349C119.82 101.218 134.948 111.342 135.079 111.431L305.401 226.609L368.247 268.902C370.382 265.537 373.598 260.561 376.814 255.89L331.274 223.991L194.975 125.994L86.2317 49.42L12.0445 0.766603C11.136 0.179075 9.90808 0.411437 9.29887 1.30515L0.520876 14.206C0.0305399 14.9253 0.137596 15.8923 0.797422 16.4699Z"
-            fill="black"
-          />
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="313"
-          height="221"
-          viewBox="0 0 313 221"
-          fill="none"
-        >
-          <path
-            d="M96.9424 63.2039C97.7305 63.7572 174.541 118.047 182.18 122.904C196.35 133.077 268.603 183.748 269.325 184.257L312.334 213.71L310.466 220.291L106.711 81.1198C102.501 78.2332 3.72796 10.006 0.84731 5.9185L0.63479 5.59798L0.842811 5.29281C3.91855 0.780673 4.30689 0.726173 4.56694 0.695949L4.80867 0.669194L4.96817 0.809884L96.9424 63.2039ZM178.294 121.627C161.642 110.273 97.0376 64.6098 96.3148 64.1011L4.68244 1.90819C4.36792 2.2525 3.6121 3.17395 1.97418 5.55338C6.93827 10.5187 72.5555 56.2182 107.32 80.2261L309.811 218.536L311.056 214.18L268.68 185.157C267.957 184.649 195.685 133.981 181.553 123.802C180.928 123.407 179.816 122.649 178.294 121.627ZM4.33717 1.68873C4.3555 1.68526 4.3555 1.68526 4.33717 1.68873V1.68873Z"
-            fill="black"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="137"
-          height="138"
-          viewBox="0 0 137 138"
-          fill="none"
-          style="background-color: green"
-        >
-          <g opacity="0.5">
-            <g opacity="0.5">
-              <path
-                opacity="0.5"
-                d="M0.486011 23.5742L135.902 115.701L136.422 114.938L1.71928 21.765L0.486011 23.5742Z"
-                fill="white"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="86"
-          height="87"
-          viewBox="0 0 86 87"
-          fill="none"
-        >
-          <path
-            d="M66.1236 74.2684C66.3565 74.7999 66.1055 75.4429 65.5739 75.6759L65.0424 75.9089C64.9216 75.9619 54.0139 80.6144 51.4977 82.1352L51.0289 82.4128C50.7118 82.6094 50.3054 82.4707 50.1571 82.1324L19.6381 12.7579C19.5322 12.5163 19.6891 12.217 19.9451 12.1768L21.5188 11.8901C21.5603 11.8863 25.5779 11.3923 29.0629 9.74922C29.4253 9.59033 29.7568 9.45943 30.0882 9.32852C31.4556 8.80105 32.7573 8.28796 34.5807 6.3364L35.4938 5.33118C35.6999 5.11123 36.0571 5.17063 36.191 5.4432L66.1236 74.2684Z"
-            fill="black"
-          />
-        </svg> -->
+          <img src="../image/img chop.png" alt="logo" class="image-dia" />
         </div>
         <div class="content-greenchop">
           <h2>Green<br />Chop</h2>
         </div>
-      </div>
+      </article>
     </section>
+
+    <!-- 3 -->
     <section class="content-achievement">
-      <div class="content-big-2">
+      <article class="content-big-2">
         <h2>GreenChop: Giữ an toàn trong từng bữa ăn của người Việt</h2>
         <p>
           Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
           tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu trong
           mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
         </p>
-      </div>
-      <div class="content-box">
+      </article>
+      <article class="content-box">
         <div class="elip elip-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -347,19 +304,20 @@
             <circle cx="117.5" cy="117.75" r="117.5" fill="#FFD5BD" />
           </svg>
         </div>
-      </div>
+      </article>
     </section>
-    <!-- 2 -->
+
+    <!-- 4 -->
     <section class="wrapper">
-      <!-- 2.1 -->
+      <!-- 4.1 -->
       <!-- <div class="title-big">
         <h1>Sản phẩm</h1>
       </div> -->
-      <!-- 2.2 -->
+      <!-- 4.2 -->
       <article class="content-product">
         <h2 class="title-small">Sản phẩm</h2>
 
-        <div class="product-list">
+        <article class="product-list">
           <div class="product">
             <div class="elip-1"></div>
             <img src="../image/donut.png" alt="logo" />
@@ -443,8 +401,300 @@
               <a href="#">Thêm vào giỏ hàng</a>
             </div>
           </div>
-        </div>
+        </article>
       </article>
     </section>
+
+    <!-- 5 -->
+    <section class="content-new">
+      <!-- 5.1 -->
+      <heading class="content-big-3">
+        <h2>Tin tức</h2>
+        <p>
+          L nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+          blandit praesent luptatum zzril delenit augue duis dolore te feugait
+          nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+        </p>
+      </heading>
+      <!-- 5.2 -->
+      <article class="new-list">
+        <!-- 5.2.1 -->
+        <div class="new-1">
+          <img src="../image/anh_1.png" alt="anh_1" class="image-view" />
+          <div class="time">
+            <h5>Lorem ipsum</h5>
+            <div class="date">
+              <img src="../image/logo_lich.png" alt="logo_lich" />
+              <p>28 - 10- 2021</p>
+            </div>
+          </div>
+          <h2 class="new-tiltle">
+            Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+          </h2>
+          <p class="new-text">
+            Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim...
+          </p>
+        </div>
+        <!-- 5.2.2 -->
+        <div class="new-1">
+          <img src="../image/anh_2.png" alt="anh_1" class="image-view" />
+          <div class="time">
+            <h5>Lorem ipsum</h5>
+            <div class="date">
+              <img src="../image/logo_lich.png" alt="logo_lich" />
+              <p>28 - 10- 2021</p>
+            </div>
+          </div>
+          <h2 class="new-tiltle">
+            Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+          </h2>
+          <p class="new-text">
+            Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim...
+          </p>
+        </div>
+        <!-- 5.2.3 -->
+        <div class="new-1">
+          <img src="../image/anh_3.png" alt="anh_1" class="image-view" />
+          <div class="time">
+            <h5>Lorem ipsum</h5>
+            <div class="date">
+              <img
+                src="../image/logo_lich.png"
+                alt="logo_lich"
+                class="logo-celendar"
+              />
+              <p>28 - 10- 2021</p>
+            </div>
+          </div>
+          <h2 class="new-tiltle">
+            Lorem ipsum dolor sit amet, cons in ectetuer adipiscing elit
+          </h2>
+          <p class="new-text">
+            Dolor sit amet, cons ectetuer adipiscing elit, sed diam in on
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim...
+          </p>
+        </div>
+      </article>
+      <!-- 5.3 -->
+      <a href="#"
+        ><span>Xem thêm </span
+        ><img src="../image/tro_huong.png" alt="logo_huong"
+      /></a>
+    </section>
+
+    <!-- 6 -->
+    <section class="content-benefit">
+      <!-- 6.1 -->
+      <heading class="content-big-4">
+        <h2>GreenChop bảo vệ người dùng như thế nào?</h2>
+        <p>
+          Mỗi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa. Người dùng có
+          thể dễ dàng tách rời hoặc gắn liền 2 phần này với nhau
+        </p>
+      </heading>
+      <!-- 6.2 -->
+      <article class="benefit-list">
+        <!-- 6.2.1 -->
+        <div class="benefit-1">
+          <img src="../image/anh_dua_1.png" alt="anh_dua" />
+          <div class="benefit-infor">
+            <h3>01. Thân trên đũa</h3>
+            <p class="infor-text-1">
+              Làm từ nhựa Melamine, đầy đủ điều kiện chứng nhận An toàn thực
+              phẩm.
+            </p>
+          </div>
+        </div>
+        <!-- 6.2.2 -->
+        <div class="benefit-1">
+          <img src="../image/anh_dua_2.png" alt="anh_dua" />
+          <div class="benefit-infor">
+            <h3>02. Đầu đũa</h3>
+            <p class="infor-text-2">
+              Được làm từ gỗ tre và bảo quản trong bọc khử trùng 100%, không hề
+              có sự xâm nhập của vi khuẩn/vì rus gây hại. Người dùng là người
+              đầu tiên chạm tay vào đầu đũa sau khi mở bọc.
+            </p>
+          </div>
+        </div>
+        <!-- 6.2.3 -->
+        <div class="benefit-1">
+          <img src="../image/anh_dua_3.png" alt="anh_dua" />
+          <div class="benefit-infor">
+            <h3>03. Khớp Inox 304</h3>
+            <p class="infor-text-3">Khớp Inox 304 để gắn 2 phần đũa với nhau</p>
+          </div>
+        </div>
+      </article>
+      <div class="benefit-2"></div>
+    </section>
+
+    <!-- 7 -->
+    <section class="content-quality">
+      <!-- 7.1 -->
+      <div class="quality-1">
+        <img src="../image/quality.png" alt="logo-quality" />
+        <div class="quality-infor">
+          <h3>Chất liệu an toàn</h3>
+          <p>
+            Phần đầu đũa được làm bằng bằng gỗ tre, đảm bảo cho sức khỏe người
+            dùng
+          </p>
+        </div>
+      </div>
+      <!-- 7.2 -->
+      <div class="quality-1">
+        <img src="../image/protect.png" alt="logo" />
+        <div class="quality-infor">
+          <h3>Vệ sinh và khử khuẩn</h3>
+          <p>
+            Đầu đũa mới 100% mỗi bữa ăn, không chung đụng đầu đũa với bất kì ai
+            khác.
+          </p>
+        </div>
+      </div>
+      <!-- 7.3 -->
+      <div class="quality-1">
+        <img src="../image/rate.png" alt="logo" />
+        <div class="quality-infor">
+          <h3>Tiện lợi</h3>
+          <p>Thao tác tháo lắp nhanh gọn và đơn giản</p>
+        </div>
+      </div>
+      <!-- 7.4 -->
+      <div class="quality-1">
+        <img src="../image/pig.png" alt="logo" />
+        <div class="quality-infor">
+          <h3>Tiết kiệm</h3>
+          <p>Giá thành đầu đũa cạnh tranh và hợp lý.</p>
+        </div>
+      </div>
+      <!-- 7.5 -->
+      <div class="quality-1">
+        <img src="../image/like.png" alt="logo" />
+        <div class="quality-infor">
+          <h3>Độc quyền</h3>
+          <p>
+            GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường Việt Nam
+            hiện tại
+          </p>
+        </div>
+      </div>
+      <!-- 7.6 -->
+      <div class="quality-1">
+        <img src="../image/transfer.png" alt="logo" />
+        <div class="quality-infor">
+          <h3>Giao hàng nhanh</h3>
+          <p>Giao hàng trong 24h</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-comment">
+      <div class="comment-image">
+        <div class="elip-3"></div>
+        <img src="../image/app.png" alt="logo" />
+      </div>
+
+      <form class="comment-list">
+        <div class="comment-question">
+          <h2>
+            Bạn có bất kì thắc mắc nào. <br />
+            Hãy để lại tin nhắn cho chúng tôi nhé!
+          </h2>
+        </div>
+
+        <div class="comment-fill">
+          <input type="text" placeholder="Tên của bạn" class="fill-text-1" />
+          <div class="fill">
+            <input
+              type="text"
+              placeholder="Email"
+              class="fill-text-2 infor-email"
+            />
+            <input
+              type="text"
+              placeholder="Số điện thoại"
+              class="fill-text-2 infor-contact"
+            />
+          </div>
+          <div class="fill-2">
+            <input type="text" class="fill-text-3" placeholder="Nội dung..." />
+            <!-- <label for="content-comment">Nội dung...</label> -->
+          </div>
+          <a href="#"><span>Gửi</span></a>
+        </div>
+      </form>
+    </section>
+
+    <footer class="content-add">
+      <div class="foot">
+        <div class="foot-1">
+          <img src="../image/bieutuong_chinh_2.png" alt="" />
+          <p>GreenChop là bạn đồng hành <span>của người tiêu dùng</span></p>
+        </div>
+
+        <div class="foot-list">
+          <ul class="foot-2">
+            <li class="foot-title">Trang chủ</li>
+            <ul class="foot-infor-1">
+              <li><a href="#">Về GreenChop</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tin tức</a></li>
+            </ul>
+          </ul>
+
+          <ul class="foot-2">
+            <li class="foot-title">Hỗ trợ</li>
+            <ul class="foot-infor-2">
+              <li><p class="foot-text-1">Đặt hàng trực tuyến (8h-22h)</p></li>
+              <li>
+                <img src="../image/alarm.png" alt="logo" />
+                <p>Thứ 2 - Thứ 6</p>
+              </li>
+              <li>
+                <img src="../image/phone_outline.png" alt="logo" />
+                <a href="#">091 1717 222</a>
+              </li>
+            </ul>
+          </ul>
+
+          <ul class="foot-2">
+            <li class="foot-title">Liên hệ</li>
+            <ul class="foot-infor-3">
+              <li>
+                <img src="../image/mail.png" alt="logo" />
+                <p>greenchopvn@gmail.com</p>
+              </li>
+              <li>
+                <img src="../image/globe.png" alt="logo" />
+                <p>Greenchop.vn</p>
+              </li>
+              <li>
+                <img src="../image/map-pin.png" alt="logo" />
+                <p>428 Điện Biên Phủ, P11, Quận 10, TPHCM</p>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-4"></div>
+      <div class="foot-5">
+        <img src="../image/certification.png" alt="logo" class="foot-cer" />
+
+        <div class="foot-icon">
+          <a href="#"><img src="../image/youtube.png" alt="" /></a>
+          <a href="#"><img src="../image/facebook.png" alt="" /></a>
+          <a href="#"><img src="../image/instagram.svg" alt="" /></a>
+          <a href="#"><img src="../image/twitter.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

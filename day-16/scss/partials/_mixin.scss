@@ -54,3 +54,21 @@
     }
   }
 }
+
+@mixin screenMobile {
+  @media screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin screenTablet {
+  @media screen and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin screenDesktops {
+  @media (max-width: 1399.98px) {
+    @content;
+  }
+}

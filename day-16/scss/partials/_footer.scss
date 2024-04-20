@@ -1,0 +1,17 @@
+@mixin footer-title {
+  color: var(--green-800-main, #46b20f);
+  font-family: Inter;
+  font-size: 16.667px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.667px; /* 130% */
+}
+
+@mixin footer-text {
+  text-decoration: none;
+  color: $textColor;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.417px; /* 127.604% */
+}

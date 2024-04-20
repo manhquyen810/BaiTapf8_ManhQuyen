@@ -1,0 +1,212 @@
+@media (max-width: 1399.98px) {
+  body {
+    width: 1000px;
+  }
+  body .header-main {
+    width: 1000px;
+    padding: 0 30px;
+  }
+  body .header-main .selection {
+    margin: 0;
+  }
+  body .content-main {
+    padding-left: 60px;
+    gap: 30px;
+  }
+  body .content-main .content-big {
+    width: 400px;
+  }
+  body .content-main .content-big h3 {
+    font-size: 20px;
+  }
+  body .content-main .content-big h2 {
+    width: 350px;
+    font-size: 35px;
+  }
+  body .content-main .content-big p {
+    width: 300px;
+    height: 80px;
+    font-size: 16px;
+  }
+  body .content-main .content-image-greenchop {
+    width: 600px;
+    height: 600px;
+  }
+  body .content-main .content-image-greenchop .content-image .image-dia {
+    width: 400px;
+    height: 400px;
+    transform: translateY(30%);
+  }
+  body .content-main .content-image-greenchop .content-greenchop h2 {
+    width: 450px;
+    font-size: 140px;
+  }
+  body .content-achievement {
+    padding: 0;
+  }
+  body .content-achievement .content-big-2 h2 {
+    font-size: 35px;
+  }
+  body .content-achievement .content-big-2 p {
+    font-size: 16px;
+  }
+  body .content-achievement .content-box .elip {
+    width: 80px;
+    height: 80px;
+  }
+  body .content-achievement .content-box .elip-1 {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+  }
+  body .content-achievement .content-box .elip-2 {
+    position: absolute;
+    z-index: -1;
+    bottom: 25%;
+    right: 15%;
+  }
+  body .content-achievement .content-box .box-achievement .box-1 {
+    width: 250px;
+  }
+  body .content-achievement .content-box .box-achievement .box-2 {
+    width: 300px;
+  }
+  body .content-achievement .content-box .box-achievement .box .box-logo {
+    width: 80px;
+    height: 80px;
+  }
+  body .content-achievement .content-box .box-achievement .box .box-logo svg {
+    width: 35px;
+    height: 35px;
+  }
+  body .content-achievement .content-box .box-achievement .box h3 {
+    font-size: 35px;
+  }
+  body .content-achievement .content-box .box-achievement .box p {
+    font-size: 18px;
+  }
+  body .content-product {
+    padding: 0 200px;
+    width: 1000px;
+  }
+  body .content-product h2 {
+    font-size: 30px;
+  }
+  body .content-product .product-list {
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  body {
+    width: 800px;
+  }
+  body .header-main {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    padding: 0 40px;
+  }
+  body .header-main .selection {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 0 auto;
+    position: relative;
+  }
+  body .header-main .selection .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  body .header-main .selection .list-out-6,
+  body .header-main .selection .list-out-7 {
+    display: none;
+  }
+  body .header-main .hamberger {
+    display: block;
+    margin-left: auto;
+  }
+  body .header-main .hamberger label {
+    font-size: 30px;
+  }
+  body .header-main #hamburger-check:checked ~ .selection .menu .menu-list {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  body .content-main {
+    padding-left: 70px;
+    gap: 20px;
+  }
+  body .content-main .content-big {
+    width: 300px;
+  }
+  body .content-main .content-big h3 {
+    font-size: 18px;
+  }
+  body .content-main .content-big h2 {
+    width: 350px;
+    font-size: 30px;
+  }
+  body .content-main .content-big p {
+    width: 300px;
+    height: 80px;
+    font-size: 15px;
+  }
+  body .content-main .content-image-greenchop {
+    width: 500px;
+    height: 500px;
+  }
+  body .content-main .content-image-greenchop .content-image .image-dia {
+    width: 300px;
+    height: 300px;
+    transform: translateY(30%);
+  }
+  body .content-main .content-image-greenchop .content-greenchop h2 {
+    width: 300px;
+    font-size: 100px;
+  }
+  body .content-achievement .content-big-2 h2 {
+    font-size: 30px;
+  }
+  body .content-achievement .content-big-2 p {
+    font-size: 15px;
+  }
+  body .content-achievement .content-box .elip {
+    width: 50px;
+    height: 50px;
+  }
+  body .content-achievement .content-box .elip-1 {
+    top: 5%;
+  }
+  body .content-achievement .content-box .elip-2 {
+    bottom: 30%;
+    right: 22%;
+  }
+  body .content-achievement .content-box .box-achievement .box-1 {
+    width: 200px;
+  }
+  body .content-achievement .content-box .box-achievement .box-2 {
+    width: 250px;
+  }
+  body .content-achievement .content-box .box-achievement .box .box-logo {
+    width: 50px;
+    height: 50px;
+  }
+  body .content-achievement .content-box .box-achievement .box .box-logo svg {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+  body .content-achievement .content-box .box-achievement .box h3 {
+    font-size: 30px;
+  }
+  body .content-achievement .content-box .box-achievement .box p {
+    width: 120px;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style-main-header.css.map */
