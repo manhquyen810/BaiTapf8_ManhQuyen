@@ -10,7 +10,11 @@ btn.addEventListener("click", () => {
   b = a - b;
   a = a - b;
 
-  alert("Các số sau khi chuyển là: " + a + " và " + b);
+  if (isNaN(a) || isNaN(b)) {
+    alert("Vui lòng nhập số!");
+  } else {
+    alert("Các số sau khi chuyển là: " + a + " và " + b);
+  }
 });
 
 //ex02
@@ -37,7 +41,11 @@ btnThree.addEventListener("click", () => {
     max = c;
   }
 
-  alert("Số lớn nhất là: " + max);
+  if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    alert("Vui lòng nhập số!");
+  } else {
+    alert("Số lớn nhất là: " + max);
+  }
 });
 
 //ex04
@@ -47,7 +55,9 @@ btnFour.addEventListener("click", () => {
   var a = parseInt(document.getElementById("number-a-ex-4").value);
   var b = parseInt(document.getElementById("number-b-ex-4").value);
 
-  if ((a >= 0 && b >= 0) || (a < 0 && b < 0)) {
+  if (isNaN(a) || isNaN(b)) {
+    alert("Vui lòng nhập số!");
+  } else if ((a >= 0 && b >= 0) || (a < 0 && b < 0)) {
     alert("Hai số " + a + " và " + b + " cùng dấu");
   } else {
     alert("Hai số " + a + " và " + b + " khác dấu");
@@ -65,5 +75,9 @@ btnFive.addEventListener("click", () => {
   const array = [a, b, c];
   array.sort((x, y) => x - y);
 
-  alert("Sắp xếp số theo thứ tự tăng dần: " + array);
+  if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    alert("Vui lòng nhập số!");
+  } else {
+    alert("Sắp xếp số theo thứ tự tăng dần: " + array);
+  }
 });
