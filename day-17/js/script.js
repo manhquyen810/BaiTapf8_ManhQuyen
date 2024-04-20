@@ -62,8 +62,8 @@ btnFive.addEventListener("click", () => {
   var b = parseInt(document.getElementById("number-b-ex-5").value);
   var c = parseInt(document.getElementById("number-c-ex-5").value);
 
-  const numbersArray = [a, b, c];
-  numbersArray.sort((x, y) => x - y);
+  const array = [a, b, c];
+  array.sort((x, y) => x - y);
 
-  alert("Sắp xếp số theo thứ tự tăng dần: " + numbersArray);
+  alert("Sắp xếp số theo thứ tự tăng dần: " + array);
 });
