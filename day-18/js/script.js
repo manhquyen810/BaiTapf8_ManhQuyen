@@ -54,6 +54,7 @@ btnTwo.addEventListener("click", () => {
   }
 });
 
+//ex03
 const btnThree = document.getElementById("btn-ex-3");
 btnThree.addEventListener("click", () => {
   var n = parseInt(document.getElementById("number-a-ex-3").value);
@@ -111,13 +112,17 @@ btnFive.addEventListener("click", () => {
 
 //ex06
 const btnSix = document.getElementById("btn-ex-6");
-btnSix.addEventListener("click", () => {
-  var n = 8;
+btnSix.addEventListener("click", () => {});
+
+//ex07
+const btnSeven = document.getElementById("btn-ex-7");
+btnSeven.addEventListener("click", () => {
+  var n = 10;
 
   for (var i = 1; i <= n; i++) {
     for (var j = 1; j <= n; j++) {
-      document.write(count + " ");
-      count++;
+      var total = i * j;
+      document.write(`${i} * ${j}` + " = " + total + "<br>");
     }
     document.write("<br>");
   }
