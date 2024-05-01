@@ -1,0 +1,10 @@
+@import "partials/mixin";
+
+@include resetCSS;
+
+body {
+  max-width: 1500px;
+  height: 6500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
