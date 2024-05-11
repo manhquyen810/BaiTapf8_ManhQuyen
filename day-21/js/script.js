@@ -21,10 +21,10 @@ btn.addEventListener("click", () => {
     }
   }
   console.log(
-    "Phần tử lớn nhất: " + max + ", nằm ở vị trí số" + (maxIndex + 1)
+    "Phần tử lớn nhất: " + max + ", nằm ở vị trí số " + (maxIndex + 1)
   );
   console.log(
-    "Phần tử nhỏ nhất: " + min + ", nằm ở vị trí số" + (minIndex + 1)
+    "Phần tử nhỏ nhất: " + min + ", nằm ở vị trí số " + (minIndex + 1)
   );
 });
 
@@ -32,7 +32,8 @@ btn.addEventListener("click", () => {
 const btnTwo = document.getElementById("btn-ex-2");
 btnTwo.addEventListener("click", () => {
   var arr = [5, 2, 1, 9, 6, 11];
-  var sum = 0;
+  var sum = 0,
+    count = 0;
   function isPrime(n) {
     if (n <= 1) {
       return false;
@@ -48,11 +49,12 @@ btnTwo.addEventListener("click", () => {
   for (var index in arr) {
     if (isPrime(arr[index])) {
       sum += arr[index];
+      count++;
       prime = true;
     }
   }
   if (prime) {
-    console.log("Tổng các số nguyên tố trong mảng: ", sum);
+    console.log("Trung bình các số nguyên tố trong mảng: ", sum / count);
   } else {
     console.log("Không có số nguyên tố trong mảng");
   }
