@@ -107,4 +107,6 @@ btnFour.addEventListener("click", () => {
   console.log("Bước 1: ", result);
   numbers[numbers.length] = element;
   console.log(numbers);
+  numbers = selectionSort(numbers);
+  console.log("Bước 2: ", numbers);
 });
