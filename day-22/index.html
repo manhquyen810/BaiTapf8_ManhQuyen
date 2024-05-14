@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .box {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        max-width: 900px;
+        border: 1px solid #ccc;
+        padding: 20px 10px;
+        margin: 0px auto;
+      }
+      .box-res {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .box img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .infor h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+      .infor p {
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="ex">
@@ -15,6 +48,10 @@
     <div class="ex">
       <h2 id="ex-3"></h2>
     </div>
+    <div id="customer-list">
+      <h2 id="ex-4"></h2>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -53,3 +53,54 @@ arrTwo.forEach(function (value) {
 newArrTwo = [strings, numbers, booleans];
 document.getElementById("ex-3").innerHTML = "Bài 3: Console";
 console.log(newArrTwo);
+
+//ex04
+var customers = [
+  [
+    "./image/300x200.jpg",
+    "Tiêu đề bài viết 1",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eveniet dolorum consequuntur assumenda enim fugit est molestiae magnam. Excepturi sint suscipit at a vitae iste minus quia ab eveniet ea.",
+  ],
+  [
+    "./image/300x200.jpg",
+    "Tiêu đề bài viết 2",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eveniet dolorum consequuntur assumenda enim fugit est molestiae magnam. Excepturi sint suscipit at a vitae iste minus quia ab eveniet ea.",
+  ],
+  [
+    "./image/300x200.jpg",
+    "Tiêu đề bài viết 3",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eveniet dolorum consequuntur assumenda enim fugit est molestiae magnam. Excepturi sint suscipit at a vitae iste minus quia ab eveniet ea.",
+  ],
+];
+
+document.getElementById("ex-4").innerHTML = "Bài 4:";
+var customerList = document.getElementById("customer-list");
+
+customers.forEach(function (customer, index) {
+  var customerDiv = document.createElement("div");
+  customerDiv.classList.add("box");
+
+  if (index === 1) {
+    customerDiv.classList.add("box-res");
+  }
+
+  var image = document.createElement("img");
+  image.src = customer[0];
+
+  var inforDiv = document.createElement("div");
+  inforDiv.classList.add("infor");
+
+  var title = document.createElement("h3");
+  title.textContent = customer[1];
+
+  var text = document.createElement("p");
+  text.textContent = customer[2];
+
+  customerDiv.appendChild(image);
+  customerDiv.appendChild(inforDiv);
+  inforDiv.appendChild(title);
+  inforDiv.appendChild(text);
+  customerDiv.appendChild(inforDiv);
+
+  customerList.appendChild(customerDiv);
+});
