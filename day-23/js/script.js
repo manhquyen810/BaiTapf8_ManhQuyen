@@ -1,3 +1,5 @@
+//ex01
+console.log("Bài 1:");
 var n = 6;
 
 function isPrime(a) {
@@ -42,8 +44,9 @@ var result = smallNum(n);
 console.log(result);
 
 //ex02
+console.log("\nBài 2:");
 nums1 = [1, 3];
-nums2 = [2, 4];
+nums2 = [2, 7];
 
 var numbers = [];
 numbers = numbers.concat(nums1, nums2);
@@ -69,7 +72,27 @@ for (var index in numbers) {
 // console.log(rightNum);
 var result = (leftNum + rightNum) / 2;
 if (numbers.length % 2 != 0) {
-  console.log(numbers[midNumbers]);
+  console.log(numbers[midIndex]);
 } else {
   console.log(result);
 }
+
+//ex02
+console.log("\nBài 3:");
+var nums = [7, 8, 9, 11, 12];
+
+nums = nums.sort(function (a, b) {
+  if (b > a) {
+    return -1;
+  }
+});
+var num = 1;
+var result = function (num) {
+  for (var i = 1; i < nums.length; i++) {
+    if (nums[i] === num) {
+      num++;
+    }
+    return num;
+  }
+};
+console.log(result(num));
