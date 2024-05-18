@@ -42,8 +42,8 @@ var result = smallNum(n);
 console.log(result);
 
 //ex02
-nums1 = [1, 2];
-nums2 = [3, 4];
+nums1 = [1, 3];
+nums2 = [2, 4];
 
 var numbers = [];
 numbers = numbers.concat(nums1, nums2);
@@ -54,5 +54,22 @@ numbers = numbers.sort(function (a, b) {
   }
 });
 console.log(numbers);
-var midNumbers = Math.floor(numbers.length / 2);
-console.log(numbers[midNumbers]);
+var midIndex = Math.floor(numbers.length / 2);
+
+var leftNum = 0,
+  rightNum = 0;
+for (var index in numbers) {
+  if (index < midIndex) {
+    leftNum = numbers[midIndex - 1];
+  } else {
+    rightNum = numbers[midIndex];
+  }
+}
+// console.log(leftNum);
+// console.log(rightNum);
+var result = (leftNum + rightNum) / 2;
+if (numbers.length % 2 != 0) {
+  console.log(numbers[midNumbers]);
+} else {
+  console.log(result);
+}
