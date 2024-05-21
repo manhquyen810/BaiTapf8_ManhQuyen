@@ -71,3 +71,48 @@ const result = createCustomers(customers);
 console.log(result);
 
 //ex03
+console.log("\nBài 3:");
+function getData(name, password, email) {
+  return { name: name, password: password, email: email, role: "user" };
+}
+
+function handleRegister(name, password, email) {
+  if (!name || !password || !email) {
+    console.log("Vui lòng nhập đầy đủ thông tin");
+    return;
+  }
+  var user = getData(name, password, email);
+
+  data.push(user);
+  return data;
+}
+
+function handleLogin(email, password) {
+  if (!email || !password) {
+    console.log("Vui lòng nhập đầy đủ thông tin");
+  }
+  var checkLogin = data.find(function (user) {
+    return user.email === email && user.password === password;
+  });
+  if (checkLogin) {
+    return checkLogin;
+  } else {
+    console.log("Thông tin đăng nhập không hợp lệ");
+  }
+}
+
+const data = [];
+const dataRegister = handleRegister(
+  "Nguyen Van A",
+  "123456",
+  "nguyenvana@email.com"
+);
+const dataRegister1 = handleRegister(
+  "Nguyen Van B",
+  "1234567",
+  "nguyenvanb@email.com"
+);
+const dataLogin = handleLogin("nguyenvanb@email.com", "1234567");
+
+console.log("data = [", dataRegister, "];");
+console.log("dataLogin = [", dataLogin, "];");
