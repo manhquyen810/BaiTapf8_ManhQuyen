@@ -38,5 +38,36 @@ console.log(getError("email"));
 console.log(getError("email.email"));
 
 //ex02
+console.log("\nBài 2: ");
+const customers = [
+  { name: "Nguyễn Văn A", age: 11, address: "Ha Noi" },
+  { name: "Nguyễn Văn B", age: 2, address: "Hai Phong" },
+  { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
+];
+function getCustomers(name, age, address) {
+  return { name, age, address };
+}
+
+function createCustomers(customers) {
+  var newCustomers = customers.map(function (customer) {
+    var newCustomer = getCustomers(
+      customer.name,
+      customer.age,
+      customer.address
+    );
+    var cutName = customer.name.split(" ");
+    newCustomer.shortName = cutName.slice(0, 1) + " " + cutName.slice(-1);
+    return newCustomer;
+  });
+  newCustomers.sort(function (a, b) {
+    if (a.age < b.age) {
+      return -1;
+    }
+  });
+  return newCustomers;
+}
+
+const result = createCustomers(customers);
+console.log(result);
 
 //ex03
