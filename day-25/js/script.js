@@ -57,23 +57,43 @@ var categories = [
     parent: 5,
   },
 ];
+function getCategories(id, name, parent) {
+  return { id, name, parent };
+}
 
 Object.prototype.nested = function () {
   console.log("Mảng ban đầu: ", this);
   var obj = {};
   var result = [];
-  this.forEach(function (key) {
-    obj[key.id] = { ...key, children: [] };
-  });
-  this.forEach(function (key) {
-    if (key.parent === 0) {
-      result.push(obj[key.id]);
+  var _this = this;
+
+  _this.forEach(function (key) {
+    var { id, name, parent } = getCategories(key.id, key.name, key.parent);
+    obj[id] = { id, name, children: [] };
+
+    if (parent === 0) {
+      result.push(obj[id]);
     } else {
-      if (obj[key.parent]) {
-        obj[key.parent].children.push(obj[key.id]);
+      if (obj[parent]) {
+        obj[parent].children.push(obj[id]);
       }
     }
   });
+
   console.log("Mảng sau khi lồng: ", result);
 };
 categories.nested();
+
+//Ex02
+console.log("\nBài 2:");
+var number = [1, 2, 3, 4, 5];
+Array.prototype.reduce2 = function () {
+  var acc = 0;
+  for (var i = 0; i < this.length; i++) {
+    cur = this[i];
+    console.log("Giá trị tích lũy:", acc, ", giá trị hiện tại:", cur);
+    acc += this[i];
+  }
+  return acc;
+};
+console.log(number.reduce2());
