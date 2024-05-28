@@ -54,3 +54,91 @@ for (var value of arr) {
 console.log(newArr);
 
 //ex04
+console.log("\nBài 4:");
+Array.prototype.filter2 = function (callback) {
+  var newArr = [];
+  for (var i = 0; i < this.length; i++) {
+    var value = this[i];
+    if (callback(value, i)) {
+      newArr[newArr.length] = value;
+    }
+  }
+  return newArr;
+};
+
+var arr = [1, 2, 3, 4, 5];
+var result = arr.filter2(function (number) {
+  return number > 3;
+});
+console.log(result);
+
+//ex05
+console.log("\nBài 5:");
+var categories = [
+  {
+    id: 1,
+    name: "Chuyên mục 1",
+  },
+  {
+    id: 2,
+    name: "Chuyên mục 2",
+    children: [
+      {
+        id: 4,
+        name: "Chuyên mục 2.1",
+      },
+      {
+        id: 5,
+        name: "Chuyên mục 2.2",
+        children: [
+          {
+            id: 10,
+            name: "Chuyên mục 2.2.1",
+          },
+          {
+            id: 11,
+            name: "Chuyên mục 2.2.2",
+          },
+          {
+            id: 12,
+            name: "Chuyên mục 2.2.3",
+          },
+        ],
+      },
+      {
+        id: 6,
+        name: "Chuyên mục 2.3",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Chuyên mục 3",
+    children: [
+      {
+        id: 7,
+        name: "Chuyên mục 3.1",
+      },
+      {
+        id: 8,
+        name: "Chuyên mục 3.2",
+      },
+      {
+        id: 9,
+        name: "Chuyên mục 3.3",
+      },
+    ],
+  },
+];
+
+function createOptions(categories) {}
+
+var result2 = createOptions(categories);
+
+console.log(result2);
+
+document.write(`
+<select name="" id="">
+  <option value="0">Chọn chuyên mục</option>
+  ${result2}
+</select>`);
