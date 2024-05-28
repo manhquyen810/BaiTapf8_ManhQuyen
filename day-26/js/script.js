@@ -18,27 +18,28 @@ console.log(result);
 
 //ex02
 console.log("\nBài 2:");
-Number.prototype.getCurrency = function (cur) {
-  var _this,
-    checkNum = Number(this);
+Object.prototype.getCurrency = function (cur) {
+  var checkNum = Number(this);
   if (!Number.isNaN(checkNum)) {
+    var _this;
     if (cur === "đ") {
-      _this = this.toLocaleString("en-Us");
+      _this = checkNum.toLocaleString("en-Us");
     } else if (cur === "vnđ") {
-      _this = this.toLocaleString("vi-VN");
+      _this = checkNum.toLocaleString("vi-VN");
     }
+    return _this + " " + cur;
   } else {
-    console.log("Dữ liệu truyền vào bị lỗi");
+    return "Dữ liệu truyền vào lỗi";
   }
-  return _this + " " + cur;
 };
 var price = 12000;
 console.log(price.getCurrency("đ"));
 
 var price = 12000;
 console.log(price.getCurrency("vnđ"));
-// var price = "12000000";
-// console.log(price.getCurrency("đ"));
+
+var price = "12000000";
+console.log(price.getCurrency("đ"));
 
 //ex03
 console.log("\nBài 3:");
@@ -46,5 +47,10 @@ Array.prototype.push2 = function (value) {
   this[this.length] = value;
 };
 var arr = [1, 2, 3, 4, 5];
-arr.push2(6);
-console.log(arr);
+var newArr = [];
+for (var value of arr) {
+  newArr.push2(value);
+}
+console.log(newArr);
+
+//ex04
