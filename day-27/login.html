@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Dân trí</title>
+  </head>
+  <body>
+    <a href="#" id="press">Đăng nhập</a>
+    <div class="login">
+      <div class="login-dialog">
+        <!-- 1 -->
+        <div class="login-header">
+          <a href="#"
+            ><img
+              src="image/image_dan_tri.png"
+              alt="ảnh dân trí"
+              class="image-main"
+          /></a>
+          <span class="close">&times;</span>
+        </div>
+        <!-- 2 -->
+        <div class="login-nav">
+          <button class="btn btn-login">Đăng nhập</button>
+          <button class="btn btn-register">Đăng ký</button>
+        </div>
+        <!-- 3 -->
+        <div class="login-body">
+            <!-- 3.1 -->
+            <div class="infor infor-up">với các tài khoản mạng xã hội</div>
+            <!-- 3.2 -->
+          <div class="login-direction">
+            <a href="#">
+              <img src="image/logo_chorme.svg" alt="logo_facebook" />
+              <span class="logo-name">Google</span>
+            </a>
+            <a href="#">
+              <img src="image/logo_fb.svg" alt="logo_facebook" />
+              <span class="logo-name">Facebook</span>
+            </a>
+          </div>
+          <!-- 3.3 -->
+            <div class="infor infor-down">hoặc</div>
+          <!-- 3.4 -->
+          <form class="login-form">
+            <div class="log log-email">
+                <label>Email</label>
+                <input class="import import-email" type="email" name="email" placeholder="Email" />
+                <p class="notify notify-email"></p>
+            </div>
+            <div class="log log-pass">
+                <label>Mật khẩu</label>
+                <input class="import import-pass" type="email" name="email" placeholder="Mật khẩu" />
+                <span class="eye">
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <p class="notify notify-pass"></p>
+            </div>
+            <a href="#" class="log-find-pass">Quên mật khẩu?</a>
+            <a href="#" class="log-import">Đăng nhập</a>
+          </form>
+          </div>
+          
+        </div>
+        <div class="login-overlay"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

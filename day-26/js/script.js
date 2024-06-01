@@ -43,8 +43,10 @@ console.log(price.getCurrency("đ"));
 
 //ex03
 console.log("\nBài 3:");
-Array.prototype.push2 = function (value) {
-  this[this.length] = value;
+Array.prototype.push2 = function () {
+  for (const item of arguments) {
+    this[this.length] = item;
+  }
 };
 var arr = [1, 2, 3, 4, 5];
 var newArr = [];
