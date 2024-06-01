@@ -50,7 +50,7 @@ function closeForm() {
   register.classList.remove("show-2");
   overlayLog.classList.remove("show");
   overlayRes.classList.remove("show-2");
-  //   overlay.classList.remove("show-2");
+  clearNotifications();
 }
 
 var email = document.querySelector(".import-email");
@@ -58,6 +58,6 @@ var pass = document.querySelector(".import-pass");
 var importInfor = document.querySelector(".log");
 
 function clearNotifications() {
-  notifyEmail.innerHTML = "";
+  notifyEmails.innerHTML = "";
   notifyPass.innerHTML = "";
 }
