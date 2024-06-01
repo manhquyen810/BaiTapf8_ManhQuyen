@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/login.css" />
     <title>Dân trí</title>
   </head>
   <body>
     <a href="#" id="press">Đăng nhập</a>
+    <!-- login -->
     <div class="login">
       <div class="login-dialog">
         <!-- 1 -->
@@ -31,9 +41,9 @@
         </div>
         <!-- 3 -->
         <div class="login-body">
-            <!-- 3.1 -->
-            <div class="infor infor-up">với các tài khoản mạng xã hội</div>
-            <!-- 3.2 -->
+          <!-- 3.1 -->
+          <div class="infor infor-up">với các tài khoản mạng xã hội</div>
+          <!-- 3.2 -->
           <div class="login-direction">
             <a href="#">
               <img src="image/logo_chorme.svg" alt="logo_facebook" />
@@ -45,31 +55,114 @@
             </a>
           </div>
           <!-- 3.3 -->
-            <div class="infor infor-down">hoặc</div>
+          <div class="infor infor-down">hoặc</div>
           <!-- 3.4 -->
           <form class="login-form">
             <div class="log log-email">
-                <label>Email</label>
-                <input class="import import-email" type="email" name="email" placeholder="Email" />
-                <p class="notify notify-email"></p>
+              <label>Email</label>
+              <input
+                class="import import-email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <p class="notify notify-email"></p>
             </div>
             <div class="log log-pass">
-                <label>Mật khẩu</label>
-                <input class="import import-pass" type="email" name="email" placeholder="Mật khẩu" />
-                <span class="eye">
-                  <i class="fa-regular fa-eye"></i>
-                </span>
-                <p class="notify notify-pass"></p>
+              <label>Mật khẩu</label>
+              <input
+                class="import import-pass"
+                type="email"
+                name="email"
+                placeholder="Mật khẩu"
+              />
+              <span class="eye">
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span class="eye-close" hidden>
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+              <p class="notify notify-pass"></p>
             </div>
             <a href="#" class="log-find-pass">Quên mật khẩu?</a>
             <a href="#" class="log-import">Đăng nhập</a>
           </form>
-          </div>
-          
         </div>
-        <div class="login-overlay"></div>
       </div>
+      <div class="overlay"></div>
     </div>
+
+    <!-- register -->
+    <div class="register">
+      <div class="register-dialog">
+        <!-- 1 -->
+        <div class="register-header">
+          <a href="#"
+            ><img
+              src="image/image_dan_tri.png"
+              alt="ảnh dân trí"
+              class="image-main"
+          /></a>
+          <span class="close">&times;</span>
+        </div>
+        <!-- 2 -->
+        <div class="register-nav">
+          <button class="btn btn-login">Đăng nhập</button>
+          <button class="btn btn-register">Đăng ký</button>
+        </div>
+        <!-- 3 -->
+        <div class="register-body">
+          <!-- 3.1 -->
+          <div class="infor infor-up">
+            Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+          </div>
+
+          <!-- 3.4 -->
+          <form class="register-form">
+            <div class="res res-email">
+              <label>Họ và tên</label>
+              <input
+                class="import import-email"
+                type="email"
+                name="email"
+                placeholder="Họ và tên"
+              />
+              <p class="notify notify-email"></p>
+            </div>
+            <div class="res res-email">
+              <label>Email</label>
+              <input
+                class="import import-email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <p class="notify notify-email"></p>
+            </div>
+            <div class="res res-pass">
+              <label>Mật khẩu</label>
+              <input
+                class="import import-pass"
+                type="email"
+                name="password"
+                placeholder="Mật khẩu"
+              />
+              <span class="eye">
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <p class="notify notify-pass"></p>
+            </div>
+            <div class="res-rules">
+              Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+              <span>điều kiện về qui định và chính sách của Dân trí</span>
+            </div>
+            <a href="#" class="res-import">Đăng ký</a>
+          </form>
+        </div>
+      </div>
+      <div class="overlay-2"></div>
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
