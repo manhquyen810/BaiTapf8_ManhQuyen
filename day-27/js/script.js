@@ -9,29 +9,21 @@ var closeButtons = document.querySelectorAll(".close");
 var overlayLog = document.querySelector(".overlay");
 var overlayRes = document.querySelector(".overlay-2");
 
-var notify = document.querySelectorAll(".notify");
 var notifyNames = document.querySelectorAll(".notify-name");
 var notifyEmails = document.querySelectorAll(".notify-email");
 var notifyPass = document.querySelectorAll(".notify-pass");
+
+var impt = document.querySelectorAll(".import");
 
 press.addEventListener("click", function () {
   login.classList.add("show");
 });
 
 closeButtons.forEach(function (button) {
-  //   console.log(button);
-  button.addEventListener("click", function () {
-    closeForm();
-  });
+  button.addEventListener("click", closeForm);
 });
-
-overlayLog.addEventListener("click", function () {
-  closeForm();
-});
-
-overlayRes.addEventListener("click", function () {
-  closeForm();
-});
+overlayLog.addEventListener("click", closeForm);
+overlayRes.addEventListener("click", closeForm);
 
 btnRes.forEach(function (btn) {
   btn.addEventListener("click", function () {
@@ -40,7 +32,6 @@ btnRes.forEach(function (btn) {
     clearNotifications();
   });
 });
-
 btnLogin.forEach(function (btn) {
   btn.addEventListener("click", function () {
     login.classList.add("show");
@@ -64,46 +55,28 @@ function clearNotifications() {
   notifyPass.forEach(function (notify) {
     notify.textContent = "";
   });
+  notifyNames.forEach(function (notify) {
+    notify.textContent = "";
+  });
+  impt.forEach(function (input) {
+    input.style.borderColor = "";
+  });
 }
 
+// đăng nhập
 var loginEmail = document.querySelector(".login-import-email");
 var loginPass = document.querySelector(".login-import-pass");
-
 var loginImports = document.querySelectorAll(".login-form .import");
-//Login
 
 loginImports.forEach(function (input) {
-  input.addEventListener("blur", function () {
-    if (loginEmail.value.trim() === "" || loginPass.value.trim() === "") {
-      if (loginEmail.value === "") {
-        notifyEmails[0].textContent = "Vui lòng nhập thông tin";
-        loginEmail.style.borderColor = "red";
-      } else {
-        notifyEmails[0].textContent = "";
-        loginEmail.style.borderColor = "";
-      }
-      if (loginPass.value === "") {
-        notifyPass[0].textContent = "Vui lòng nhập thông tin";
-        loginPass.style.borderColor = "red";
-      } else {
-        notifyPass[0].textContent = "";
-        loginPass.style.borderColor = "";
-      }
-    } else {
-      notifyEmails[0].textContent = "";
-      notifyPass[0].textContent = "";
-      loginEmail.style.borderColor = "";
-      loginPass.style.borderColor = "";
-    }
-  });
+  input.addEventListener("blur", validateLoginForm);
 });
 
 loginEmail.addEventListener("input", function () {
-  var trimEmail = loginEmail.value.trim();
-
+  var trimmedEmail = loginEmail.value.trim();
   if (
-    trimEmail.length > 0 &&
-    (!trimEmail.includes("@gmail.com") || trimEmail.includes(" "))
+    trimmedEmail.length > 0 &&
+    (!trimmedEmail.includes("@gmail.com") || trimmedEmail.includes(" "))
   ) {
     notifyEmails[0].textContent = "Vui lòng nhập đúng định dạng";
     loginEmail.style.borderColor = "red";
@@ -114,8 +87,93 @@ loginEmail.addEventListener("input", function () {
 });
 
 loginPass.addEventListener("input", function () {
-  if (loginPass.length > 0) {
+  if (loginPass.value.trim().length > 0) {
     notifyPass[0].textContent = "";
     loginPass.style.borderColor = "";
   }
 });
+
+function validateLoginForm() {
+  validateLoginEmail();
+  validateLoginPass();
+}
+
+function validateLoginEmail() {
+  var trimmedEmail = loginEmail.value.trim();
+  if (trimmedEmail === "") {
+    notifyEmails[0].textContent = "Vui lòng nhập thông tin";
+    loginEmail.style.borderColor = "red";
+  } else if (
+    !trimmedEmail.includes("@gmail.com") ||
+    trimmedEmail.includes(" ")
+  ) {
+    notifyEmails[0].textContent = "Vui lòng nhập đúng định dạng";
+    loginEmail.style.borderColor = "red";
+  } else {
+    notifyEmails[0].textContent = "";
+    loginEmail.style.borderColor = "";
+  }
+}
+
+function validateLoginPass() {
+  if (loginPass.value.trim() === "") {
+    notifyPass[0].textContent = "Vui lòng nhập thông tin";
+    loginPass.style.borderColor = "red";
+  } else {
+    notifyPass[0].textContent = "";
+    loginPass.style.borderColor = "";
+  }
+}
+
+//đăng ký
+var registerName = document.querySelector(".register-import-name");
+var registerEmail = document.querySelector(".register-import-email");
+var registerPass = document.querySelector(".register-import-pass");
+var registerImports = document.querySelectorAll(".register-form .import");
+
+registerImports.forEach(function (input) {
+  input.addEventListener("blur", validateRegisterForm);
+});
+
+function validateRegisterForm() {
+  validateRegisterName();
+  validateRegisterEmail();
+  validateRegisterPass();
+}
+
+function validateRegisterName() {
+  if (registerName.value.trim() === "") {
+    notifyNames[0].textContent = "Vui lòng nhập thông tin";
+    registerName.style.borderColor = "red";
+  } else {
+    notifyNames[0].textContent = "";
+    registerName.style.borderColor = "";
+  }
+}
+
+function validateRegisterEmail() {
+  var trimmedEmail = registerEmail.value.trim();
+  if (trimmedEmail === "") {
+    notifyEmails[1].textContent = "Vui lòng nhập thông tin";
+    registerEmail.style.borderColor = "red";
+  } else if (
+    !trimmedEmail.includes("@gmail.com") ||
+    trimmedEmail.includes(" ")
+  ) {
+    notifyEmails[1].textContent = "Vui lòng nhập đúng định dạng";
+    registerEmail.style.borderColor = "red";
+  } else {
+    notifyEmails[1].textContent = "";
+    registerEmail.style.borderColor = "";
+  }
+}
+
+function validateRegisterPass() {
+  if (registerPass.value.trim() === "") {
+    notifyPass[1].textContent = "Vui lòng nhập thông tin";
+    registerPass.style.borderColor = "red";
+  } else {
+    notifyPass[1].textContent = "";
+    registerPass.style.borderColor = "";
+  }
+}
