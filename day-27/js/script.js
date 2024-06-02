@@ -69,30 +69,53 @@ function clearNotifications() {
 var loginEmail = document.querySelector(".login-import-email");
 var loginPass = document.querySelector(".login-import-pass");
 
-var loginImport = document.querySelectorAll(".login-import");
+var loginImports = document.querySelectorAll(".login-form .import");
 //Login
 
-loginImport.forEach(function (input) {
+loginImports.forEach(function (input) {
   input.addEventListener("blur", function () {
-    if (loginEmail.value === "" || loginPass.value === "") {
-      notifyEmails[0].textContent = "Vui lòng nhập dữ liệu";
-      notifyPass[0].textContent = "Vui lòng nhập dữ liệu";
-      loginEmail.style.borderColor = "red"; // Thay đổi màu border thành đỏ
-      loginPass.style.borderColor = "red";
+    if (loginEmail.value.trim() === "" || loginPass.value.trim() === "") {
+      if (loginEmail.value === "") {
+        notifyEmails[0].textContent = "Vui lòng nhập thông tin";
+        loginEmail.style.borderColor = "red";
+      } else {
+        notifyEmails[0].textContent = "";
+        loginEmail.style.borderColor = "";
+      }
+      if (loginPass.value === "") {
+        notifyPass[0].textContent = "Vui lòng nhập thông tin";
+        loginPass.style.borderColor = "red";
+      } else {
+        notifyPass[0].textContent = "";
+        loginPass.style.borderColor = "";
+      }
     } else {
       notifyEmails[0].textContent = "";
       notifyPass[0].textContent = "";
-      loginEmail.style.borderColor = ""; // Chuyển lại màu border mặc định
+      loginEmail.style.borderColor = "";
       loginPass.style.borderColor = "";
     }
   });
 });
+
 loginEmail.addEventListener("input", function () {
-  if (loginEmail.value.length > 0 && !loginEmail.value.includes("@gmail.com")) {
+  var trimEmail = loginEmail.value.trim();
+
+  if (
+    trimEmail.length > 0 &&
+    (!trimEmail.includes("@gmail.com") || trimEmail.includes(" "))
+  ) {
     notifyEmails[0].textContent = "Vui lòng nhập đúng định dạng";
     loginEmail.style.borderColor = "red";
   } else {
     notifyEmails[0].textContent = "";
     loginEmail.style.borderColor = "";
+  }
+});
+
+loginPass.addEventListener("input", function () {
+  if (loginPass.length > 0) {
+    notifyPass[0].textContent = "";
+    loginPass.style.borderColor = "";
   }
 });
