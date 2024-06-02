@@ -135,6 +135,34 @@ registerImports.forEach(function (input) {
   input.addEventListener("blur", validateRegisterForm);
 });
 
+registerName.addEventListener("input", function () {
+  if (registerName.value.trim().length > 0) {
+    notifyNames[0].textContent = "";
+    registerName.style.borderColor = "";
+  }
+});
+
+registerEmail.addEventListener("input", function () {
+  var trimmedEmail = registerEmail.value.trim();
+  if (
+    trimmedEmail.length > 0 &&
+    (!trimmedEmail.includes("@gmail.com") || trimmedEmail.includes(" "))
+  ) {
+    notifyEmails[1].textContent = "Vui lòng nhập đúng định dạng";
+    registerEmail.style.borderColor = "red";
+  } else {
+    notifyEmails[1].textContent = "";
+    registerEmail.style.borderColor = "";
+  }
+});
+
+registerPass.addEventListener("input", function () {
+  if (registerPass.value.trim().length > 0) {
+    notifyPass[1].textContent = "";
+    registerPass.style.borderColor = "";
+  }
+});
+
 function validateRegisterForm() {
   validateRegisterName();
   validateRegisterEmail();
@@ -155,12 +183,6 @@ function validateRegisterEmail() {
   var trimmedEmail = registerEmail.value.trim();
   if (trimmedEmail === "") {
     notifyEmails[1].textContent = "Vui lòng nhập thông tin";
-    registerEmail.style.borderColor = "red";
-  } else if (
-    !trimmedEmail.includes("@gmail.com") ||
-    trimmedEmail.includes(" ")
-  ) {
-    notifyEmails[1].textContent = "Vui lòng nhập đúng định dạng";
     registerEmail.style.borderColor = "red";
   } else {
     notifyEmails[1].textContent = "";
