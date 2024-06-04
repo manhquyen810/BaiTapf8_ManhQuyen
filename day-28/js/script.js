@@ -8,29 +8,49 @@ btnAdd.addEventListener("click", function (event) {
   var task = importText.value.trim();
 
   if (task) {
-    var list = document.createElement("div");
-    list.classList.add("list");
-
-    var listItem = document.createElement("li");
-    listItem.textContent = task;
-
-    var editBtn = document.createElement("span");
-    editBtn.classList.add("todo-edit");
-    editBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
-    console.log(editBtn);
-
-    var removeBtn = document.createElement("span");
-    removeBtn.classList.add("todo-remove");
-    removeBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
-
-    list.appendChild(listItem);
-    list.appendChild(editBtn);
-    list.appendChild(removeBtn);
-
-    todoList.appendChild(list);
+    // console.log(task.length);
+    createEl(task);
 
     importText.value = "";
   } else {
-    alert("Vui lòng nhập task!");
+    createEl(task);
+    listItem.textContent = "";
   }
 });
+// console.log(importText.value);
+
+function createEl(task) {
+  var list = document.createElement("div");
+  list.classList.add("list");
+
+  var listItem = document.createElement("li");
+  validateText(listItem, task);
+
+  var editBtn = document.createElement("span");
+  editBtn.classList.add("todo-edit");
+  editBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
+
+  var removeBtn = document.createElement("span");
+  removeBtn.classList.add("todo-remove");
+  removeBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
+  removeText(list, removeBtn);
+
+  list.appendChild(listItem);
+  list.appendChild(editBtn);
+  list.appendChild(removeBtn);
+  todoList.appendChild(list);
+}
+
+function validateText(item, task) {
+  if (task.length > 28) {
+    item.textContent = task.substring(0, 28) + "...";
+  } else {
+    item.textContent = task;
+  }
+}
+
+function removeText(list, remove) {
+  remove.addEventListener("click", function () {
+    list.remove();
+  });
+}
