@@ -57,17 +57,17 @@ function validateText(item, task) {
 
 function completeText(item) {
   item.addEventListener("click", function () {
-    var isCompleted = item.classList.contains("completed");
-    console.log(isCompleted);
-    if (!isCompleted) {
+    var isComplete = item.classList.contains("complete");
+    console.log(isComplete);
+    if (!isComplete) {
       var del = document.createElement("del");
       del.textContent = item.textContent;
       item.innerHTML = "";
       item.appendChild(del);
-      item.classList.add("completed");
+      item.classList.add("complete");
     } else {
       item.innerHTML = item.textContent;
-      item.classList.remove("completed");
+      item.classList.remove("complete");
     }
   });
 }
