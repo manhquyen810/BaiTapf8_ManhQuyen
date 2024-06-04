@@ -88,6 +88,7 @@
   padding: 10px 0 16px 10px;
   border-radius: 4px;
 }
+
 .wrapper #todo-list .list .todo-edit {
   position: absolute;
   right: 12%;
