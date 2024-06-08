@@ -34,7 +34,7 @@ function createEl(task) {
   var editBtn = document.createElement("span");
   editBtn.classList.add("todo-edit");
   editBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
-  //   editText(task, listItem, editBtn);
+  editText(task, listItem, editBtn);
 
   var removeBtn = document.createElement("span");
   removeBtn.classList.add("todo-remove");
@@ -64,25 +64,28 @@ function completeText(item) {
       del.textContent = item.textContent;
       item.innerHTML = "";
       item.appendChild(del);
+      item.style.opacity = "0.5";
       item.classList.add("complete");
     } else {
       item.innerHTML = item.textContent;
+      item.style.opacity = "1";
       item.classList.remove("complete");
     }
   });
 }
 
-// function editText(task, list, edit) {
-//   edit.addEventListener("click", function () {
-//     importText.value = task;
-//     btnAdd.addEventListener("click", function () {
-//       item.textContent = importText.value;
-//     });
-//   });
-// }
+function editText(task, listItem, editBtn) {
+  editBtn.addEventListener("click", function () {});
+}
 
 function removeText(list, remove) {
   remove.addEventListener("click", function () {
     list.remove();
+  });
+  //xóa toàn bộ
+  document.addEventListener("keyup", function (e) {
+    if (e.key === "Delete") {
+      list.remove();
+    }
   });
 }
