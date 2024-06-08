@@ -17,7 +17,7 @@ arrowRight.addEventListener("click", function () {
 });
 
 arrowLeft.addEventListener("click", function () {
-  if (currentIndex > 0) {
+  if (count > 0) {
     count--;
     itemList.style.transform = `translateX( ${-widthImage * count}px)`;
   }
