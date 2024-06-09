@@ -10,34 +10,23 @@ body {
 #container {
   position: relative;
   overflow: hidden;
-  width: 6400px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #container .item-list {
   display: flex;
   transition: transform 0.5s ease;
-  /* transform: translateX(-3200px); */
 }
 
 #container .item-list .item {
-  max-width: 1600px;
-  width: 100%;
+  min-width: 100%;
 }
 
 #container .item-list .item img {
-  /* max-width: 1600px; */
-  width: 1600px;
-  height: auto;
-  /* object-fit: cover; */
-}
-
-/* #container .arrow {
-  max-width: 3000px;
   width: 100%;
   height: auto;
-  font-size: 30px;
-  border: 1px solid red;
- } */
+}
 
 #container .arrow span {
   display: block;
@@ -45,37 +34,34 @@ body {
   height: 40px;
   font-size: 25px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.274);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 40px;
+  z-index: 99;
 }
 
 #container .arrow .ar-left {
-  position: fixed;
-  top: 200px;
-  left: 2%;
-  text-align: center;
-  line-height: 40px;
-  z-index: 99;
+  left: 10px;
 }
-#container .arrow .ar-right {
-  position: fixed;
-  text-align: center;
-  top: 200px;
-  right: 2%;
-  line-height: 40px;
-  z-index: 99;
-}
-#container .dots {
-  width: 1600px;
-  height: 12px;
-  position: fixed;
-  top: 450px;
 
+#container .arrow .ar-right {
+  right: 10px;
+}
+
+#container .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 10px;
-  /* border: 1px solid red; */
 }
+
 #container .dots span {
   display: block;
   width: 15px;
@@ -90,6 +76,7 @@ body {
 #container .dots .active {
   background-color: orange;
 }
+
 #container .dots span:hover {
   background-color: orange;
 }

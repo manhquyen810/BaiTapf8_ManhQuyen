@@ -5,15 +5,10 @@ var arrowRight = document.querySelector(".arrow .ar-right");
 var dots = document.querySelectorAll(".dots span");
 
 var items = itemList.children;
-var widthImage = items[0].offsetWidth;
-console.log(widthImage);
+// console.log(items[0].offsetWidth);
 var count = 0;
 var totalItems = items.length;
-console.log(totalItems);
-
-function updateContainerWidth() {
-  itemList.style.width = `${widthImage * totalItems}px`;
-}
+var startX = 0;
 
 function updateDots() {
   dots.forEach(function (dot, index) {
@@ -25,13 +20,10 @@ function updateDots() {
   });
 }
 
-updateContainerWidth();
-updateDots();
-
 arrowRight.addEventListener("click", function () {
   if (count < totalItems - 1) {
     count++;
-    itemList.style.transform = `translateX(${-widthImage * count}px)`;
+    itemList.style.transform = `translateX(${-100 * count}%)`;
     updateDots();
   }
 });
@@ -39,19 +31,40 @@ arrowRight.addEventListener("click", function () {
 arrowLeft.addEventListener("click", function () {
   if (count > 0) {
     count--;
-    itemList.style.transform = `translateX(${-widthImage * count}px)`;
+    itemList.style.transform = `translateX(${-100 * count}%)`;
     updateDots();
   }
 });
 
 dots.forEach(function (dot, index) {
   dot.addEventListener("click", function () {
-    handleDotClick(index);
+    count = index;
+    itemList.style.transform = `translateX(${-100 * count}%)`;
+    updateDots();
   });
 });
 
-function handleDotClick(index) {
-  count = index;
-  itemList.style.transform = `translateX(${-widthImage * count}px)`;
+updateDots();
+
+itemList.addEventListener("mousedown", function (e) {
+  startX = e.clientX;
+  itemList.style.cursor = "move";
+  document.addEventListener("mousemove", handleDrag);
+});
+
+document.addEventListener("mouseup", function () {
+  itemList.style.cursor = "default";
+  document.removeEventListener("mousemove", handleDrag);
+});
+
+function handleDrag(e) {
+  var moveX = e.clientX - startX;
+  if (moveX < 0 && count < items.length - 1) {
+    count++;
+  } else if (moveX > 0 && count > 0) {
+    count--;
+  }
+  itemList.style.translate = `${-100 * count}%`;
+  itemList.style.transition = "1s ease";
   updateDots();
 }
