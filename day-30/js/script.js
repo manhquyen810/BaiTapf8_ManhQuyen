@@ -54,6 +54,8 @@ var links = [
   },
 ];
 
+var local = ["chỉ", "đường", "tới", "bản", "đồ"];
+
 recognition.addEventListener("result", function (e) {
   var text = e.results[0][0].transcript.toLowerCase().trim();
   result.textContent = "Đã nói xong. Hy vọng kết quả như ý bạn";
@@ -66,6 +68,45 @@ recognition.addEventListener("result", function (e) {
       action.textContent = `Đang thực hiện: ${links[i].name}`;
       action.style.display = "block";
       window.open(links[i].url, "_blank");
+      linkFound = true;
+      break;
+    } else if (text.includes("bài hát") && text.includes("mở")) {
+      var song = text.replace("mở", "").replace("bài hát", "").trim();
+      window.open(
+        `https://zingmp3.vn/tim-kiem/bai-hat.html?q=${encodeURIComponent(
+          song
+        )}`,
+        "_blank"
+      );
+      action.textContent = `Đang thực hiện: Mở bài hát ${song} trên Zing MP3`;
+      linkFound = true;
+
+      break;
+    } else if (text.includes("video") && text.includes("mở")) {
+      var video = text.replace("mở", "").replace("video", "").trim();
+      window.open(
+        `https://www.youtube.com/results?search_query=${encodeURIComponent(
+          video
+        )}`,
+        "_blank"
+      );
+      action.textContent = `Đang thực hiện: Tìm video ${video} trên Youtube`;
+      linkFound = true;
+      break;
+    } else if (
+      (text.includes("chỉ đường") || text.includes("tới")) &&
+      (text.includes("bản đồ") || text.includes("google maps"))
+    ) {
+      var words = text.split(" ");
+      var newWords = words.filter(function (word) {
+        return !local.includes(word.toLowerCase());
+      });
+      var location = newWords.join(" ").trim();
+      window.open(
+        `https://www.google.com/maps/search/${encodeURIComponent(location)}`,
+        "_blank"
+      );
+      action.textContent = `Đang thực hiện: Chỉ đường tới ${location} trên Google Maps`;
       linkFound = true;
       break;
     }
