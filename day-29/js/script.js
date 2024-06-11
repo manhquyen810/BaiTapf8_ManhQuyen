@@ -47,7 +47,7 @@ dots.forEach(function (dot, index) {
 updateDots();
 
 itemList.addEventListener("mousedown", function (e) {
-  startX = e.clientX;
+  startX = e.offsetX;
   itemList.style.cursor = "move";
   document.addEventListener("mousemove", handleDrag);
 });
