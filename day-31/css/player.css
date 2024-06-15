@@ -40,9 +40,9 @@
   width: 0;
 }
 
-.progress-bar:hover {
+/* .progress-bar:hover {
   opacity: 0.6;
-}
+} */
 
 .progress-bar .progress span {
   position: absolute;
