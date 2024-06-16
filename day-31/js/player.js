@@ -113,7 +113,7 @@ window.addEventListener("load", function () {
     var newTime = (offsetX / progressBarWidth) * audio.duration;
     runTimer.innerText = getTimeFormat(newTime);
     runTimer.style.display = "block";
-    runTimer.style.left = `${offsetX2 - 8}px`;
+    runTimer.style.left = `${offsetX - 8}px`;
   });
   progressBar.addEventListener("mouseleave", function () {
     runTimer.style.display = "none";
