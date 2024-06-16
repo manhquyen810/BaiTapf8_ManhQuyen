@@ -51,6 +51,7 @@ var audio = document.querySelector("audio");
 var player = document.querySelector(".player");
 var playBtn = player.querySelector(".play-btn i");
 var playTimer = player.querySelector(".play-timer");
+var runTimer = player.querySelector(".run-timer");
 var currentTimeEl = playTimer.firstElementChild;
 var durationEl = playTimer.lastElementChild;
 var duration = 0;
@@ -102,5 +103,17 @@ window.addEventListener("load", function () {
   audio.addEventListener("ended", function () {
     audio.currentTime = 0;
     //   console.log(audio.currentTime);
+  });
+});
+
+progressBar.addEventListener("mousemove", function (e) {
+  offsetX = e.offsetX;
+  console.log(offsetX);
+  var newTime = (offsetX / progressBarWidth) * audio.duration;
+  runTimer.innerText = getTimeFormat(newTime);
+  runTimer.style.display = "block";
+  runTimer.style.left = `${offsetX - 8}px`;
+  progressBar.addEventListener("mouseleave", function () {
+    runTimer.style.display = "none";
   });
 });

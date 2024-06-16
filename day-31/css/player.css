@@ -29,6 +29,7 @@
   height: 10px;
   background: gray;
   position: relative;
+  cursor: pointer;
 }
 
 .progress-bar .progress {
@@ -56,10 +57,10 @@
 }
 
 .play-timer .run-timer {
-  position: fixed;
+  position: absolute;
   background-color: black;
   color: white;
   font-size: 10px;
-  top: 60px;
+  top: -15px;
   display: none;
 }
