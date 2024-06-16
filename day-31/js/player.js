@@ -45,6 +45,7 @@ var handleDrag = function (e) {
   }
   progress.style.width = rate + "%";
   audio.currentTime = (rate / 100) * duration;
+  runTimer.style.display = "none";
 };
 
 var audio = document.querySelector("audio");
@@ -97,6 +98,7 @@ window.addEventListener("load", function () {
     var newTime = (offsetX / progressBarWidth) * audio.duration;
     //   console.log(duration);
     audio.currentTime = newTime;
+    runTimer.style.display = "none";
   });
 
   //reset audio
@@ -104,15 +106,15 @@ window.addEventListener("load", function () {
     audio.currentTime = 0;
     //   console.log(audio.currentTime);
   });
-});
 
-progressBar.addEventListener("mousemove", function (e) {
-  offsetX = e.offsetX;
-  console.log(offsetX);
-  var newTime = (offsetX / progressBarWidth) * audio.duration;
-  runTimer.innerText = getTimeFormat(newTime);
-  runTimer.style.display = "block";
-  runTimer.style.left = `${offsetX - 8}px`;
+  progressBar.addEventListener("mousemove", function (e) {
+    offsetX = e.offsetX;
+    // console.log(offsetX);
+    var newTime = (offsetX / progressBarWidth) * audio.duration;
+    runTimer.innerText = getTimeFormat(newTime);
+    runTimer.style.display = "block";
+    runTimer.style.left = `${offsetX2 - 8}px`;
+  });
   progressBar.addEventListener("mouseleave", function () {
     runTimer.style.display = "none";
   });
