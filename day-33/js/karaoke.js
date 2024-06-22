@@ -97,7 +97,9 @@ window.addEventListener("load", function () {
   });
   audio.addEventListener("timeupdate", function () {
     var currentTime = audio.currentTime;
+    // console.log(currentTime);
     currentTimeEl.innerText = getTimeFormat(currentTime);
+    // console.log(currentTimeEl);
     var rate = (currentTime / duration) * 100;
     progress.style.width = rate + "%";
   });
@@ -2180,8 +2182,57 @@ var lyric = {
   },
 };
 
-console.log(lyric.data.sentences);
-var lyricData = lyric.data.sentences;
-lyricData.map(function (value) {
-  console.log(value);
+var karaokeInner = player.querySelector(".karaoke-inner");
+var karaokeWord = player.querySelector(".karaoke-word");
+var pFirst = karaokeWord.firstElementChild;
+// console.log(pFirst);
+var pLast = karaokeWord.lastElementChild;
+// console.log(pLast);
+
+audio.addEventListener("timeupdate", function () {
+  var currentTime = audio.currentTime;
+  // console.log(currentTime);
+  var lyricData = lyric.data.sentences;
+
+  lyricData.forEach(function (value, index) {
+    var startTime = value.words[0].startTime / 1000;
+    // console.log(startTime);
+    var endTime = value.words[value.words.length - 1].endTime / 1000;
+    // console.log(endTime);
+    if (startTime <= currentTime && endTime >= currentTime) {
+      var wordData = value.words.map(function (word) {
+        return word.data;
+      });
+      // console.log(wordData);
+      var result = wordData.join(" ");
+      if (index % 2 === 0) {
+        pFirst.innerHTML = result;
+      } else {
+        pLast.innerHTML = result;
+      }
+    }
+  });
 });
+
+// var currentTime = audio.currentTime;
+// var getCurrentTime = getTimeFormat(currentTime);
+// // console.log(currentTime);
+// var lyricData = lyric.data.sentences;
+// lyricData.map(function (value, indexVal) {
+//   console.log(lyricData[indexVal]);
+//   // console.log(value.words);
+//   // console.log("vị trí mảng lớn: ", indexVal);
+//   var inValue = value.words;
+//   inValue.map(function (key, indexKey) {
+//     console.log(inValue[indexKey].data);
+//     // console.log(key);
+//     // console.log("vị trí mảng con: ", indexKey);
+//     var startTime = getTimeFormat(key.startTime / 1000);
+//     // console.log("start: ", startTime);
+//     var endTime = getTimeFormat(key.endTime / 1000);
+//     // console.log("end: ", endTime);
+//     var dataKey = key.data;
+//     // console.log(dataKey);
+
+//   });
+// });
