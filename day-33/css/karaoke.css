@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.player {
+  width: 80%;
+  margin: 30px auto;
+  /* border: 1px solid red; */
+}
+
+.player .play-btn {
+  text-align: center;
+}
+
+.player .play-btn i {
+  cursor: pointer;
+}
+
+.player .play-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar:hover {
+  opacity: 0.6;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  width: 0;
+}
+.progress-bar .progress span {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  translate: 50% 0;
+  width: 12px;
+  height: 12px;
+  background: blueviolet;
+  border-radius: 50%;
+}
+
+.play-timer .run-timer {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  top: -15px;
+  display: none;
+}
+
+.open-karaoke {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.open-karaoke button {
+  background-color: blueviolet;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.karaoke {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-color: blueviolet;
+  translate: 0 100%;
+  transition: translate 0.5s ease;
+}
+
+.karaoke .container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.karaoke .container .karaoke-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.karaoke .container .karaoke-header h2 {
+  font-size: 50px;
+}
+
+.karaoke .container .karaoke-header .close {
+  font-size: 50px;
+  cursor: pointer;
+}

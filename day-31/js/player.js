@@ -34,6 +34,7 @@ document.addEventListener("mouseup", function () {
   lastOffsetProgressBar = offsetProgressBar;
 });
 var handleDrag = function (e) {
+  setDuration();
   var clientX = e.clientX;
   offsetProgressBar = clientX - initialClientX + lastOffsetProgressBar;
   var rate = (offsetProgressBar / progressBarWidth) * 100;
