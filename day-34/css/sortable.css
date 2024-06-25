@@ -9,6 +9,7 @@
   padding: 20px 10px;
   background-color: #4286f4;
 }
+
 .list .list-item {
   padding: 10px 5px;
   background-color: #8bb3f4;
@@ -19,6 +20,7 @@
 .list .active {
   background-color: #ff6f00;
 }
+
 .list .list-item.dragging {
   opacity: 0.5;
 }
