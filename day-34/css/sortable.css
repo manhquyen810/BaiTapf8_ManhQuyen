@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 500px;
+  padding: 20px 10px;
+  background-color: #4286f4;
+}
+.list .list-item {
+  padding: 10px 5px;
+  background-color: #8bb3f4;
+  border: 1px solid white;
+  margin-bottom: 2px;
+}
+
+.list .active {
+  background-color: #ff6f00;
+}
+.list .list-item.dragging {
+  opacity: 0.5;
+}
