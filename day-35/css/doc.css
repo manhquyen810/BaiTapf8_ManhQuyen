@@ -19,7 +19,7 @@
 
 .container hr {
   border: 1px solid rgba(128, 128, 128, 0.363);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .container .content {
   display: flex;
@@ -44,6 +44,38 @@
   line-height: 45px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.container .content .export-file .file-down:hover {
+  background-color: cornflowerblue;
+}
+
+.container .content .export-file .file {
+  width: 150px;
+  height: 110px;
+  padding: 10px 0 10px 0;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: absolute;
+  top: 13%;
+  /* border: 1px solid red; */
+  display: none;
+}
+.container .content .export-file .file.show {
+  display: flex;
+  flex-direction: column;
+}
+.container .content .export-file .file button {
+  height: 30px;
+  font-size: 16px;
+  background-color: white;
+
+  border: none;
+  cursor: pointer;
+}
+.container .content .export-file .file button:hover {
+  background-color: rgba(128, 128, 128, 0.164);
 }
 .container .content .export-file .file-name {
   margin-left: 20px;
@@ -69,21 +101,30 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* .container .content .editor button.active {
+  background: red;
+} */
+.container .content .editor button:hover {
+  background-color: grey;
 }
 .container .content .editor .import-color {
   height: 100%;
   width: 15%;
+  cursor: pointer;
 }
 .container .import {
   /* border: 1px solid red; */
 }
 .container .import .import-letter {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   padding: 20px;
   font-size: 16px;
   font-family: Roboto, sans-serif;
-  box-shadow: 1px 1px 8px black;
+  box-shadow: 1px 1px 5px black;
   margin-bottom: 20px;
   resize: none;
   border: none;
