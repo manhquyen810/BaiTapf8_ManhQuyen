@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/doc.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Doc Editor</div>
+      <hr />
+      <div class="content">
+        <div class="export-file">
+          <div class="file-down">File v</div>
+          <div class="file" style="display: none">
+            <button class="btn-new">New</button>
+            <button class="btn-txt">Save as TXT</button>
+            <button class="btn-pdf">Save as PDF</button>
+          </div>
+          <input type="text" value="untitled" class="file-name" />
+        </div>
+        <div class="editor">
+          <button class="btn-b"><b>b</b></button>
+          <button class="btn-u"><u>u</u></button>
+          <button class="btn-i"><i>i</i></button>
+          <input type="color" class="import-color" />
+        </div>
+      </div>
+      <div class="import">
+        <input type="text" class="import-letter" />
+        <div class="data">
+          <p class="num-char">Số kí tự: 0</p>
+          <p class="num-word">Số từ: 0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/doc.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
+      integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
