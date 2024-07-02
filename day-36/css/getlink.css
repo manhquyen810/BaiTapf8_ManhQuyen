@@ -39,10 +39,15 @@ body {
   font-size: 2rem;
 }
 .container .btn {
-  color: white;
   padding: 10px 25px;
   border-radius: 99px;
   border: 1px solid white;
-  background: transparent;
+  color: rgba(0, 0, 0, 0.514);
+  background: #b6b6b6;
+  cursor: not-allowed;
+}
+.btn.active {
+  background-color: transparent;
+  color: white;
   cursor: pointer;
 }
