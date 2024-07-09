@@ -131,7 +131,7 @@
 .container .box .todos .todos-list .todo-list .btn-list .btn-check {
   background-color: rgba(128, 128, 128, 0.37);
 }
-.container .box .todos .todos-list .btn-check-right {
+.container .box .todos .btn-check-right {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -145,6 +145,78 @@
   cursor: pointer;
   transition: background 0.5s ease;
 }
-.container .box .todos .todos-list .btn-check-right:hover {
+.container .box .todos .btn-check-right:hover {
+  background: black;
+}
+
+.container .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  padding: 1rem;
+  background-color: rgba(55, 65, 81, 0.6);
+  display: none;
+}
+
+.container .overlay.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .overlay .display-add {
+  max-width: 28rem;
+  width: 100%;
+}
+.container .overlay .display-add .add {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 2px 2px gray;
+  background-color: white;
+}
+.container .overlay .display-add .add .text {
+  padding: 1.5rem;
+}
+.container .overlay .display-add .add .text #in-add {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+}
+.container .overlay .display-add .add .text #in-add::placeholder {
+  font-size: 0.9rem;
+}
+.container .overlay .display-add .add .btn-accept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.container .overlay .display-add .add .btn-accept button {
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+.container .overlay .display-add .add .btn-accept .btn-save {
+  background: green;
+}
+.container .overlay .display-add .add .btn-accept .btn-save:hover {
+  background: black;
+}
+.container .overlay .display-add .add .btn-accept .btn-cancel {
+  margin-left: 2rem;
+  background: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  color: gray;
+}
+.container .overlay .display-add .add .btn-accept .btn-cancel:hover {
+  color: white;
   background: black;
 }

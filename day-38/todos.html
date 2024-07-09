@@ -32,7 +32,8 @@
           </div>
 
           <div class="todos-list">
-            <div class="todo-list">
+            <div class="list"></div>
+            <!-- <div class="todo-list">
               <span class="item-info">Minh's next task</span>
               <div class="btn-list">
                 <button class="btn-del">
@@ -45,17 +46,46 @@
                   <i class="fa-regular fa-square-check"></i>
                 </button>
               </div>
-            </div>
+            </div> -->
             <button class="btn-check-right">
               <span>Completed Todos <span class="number">0</span></span>
               <span class="arrow">
                 <i class="fa-solid fa-caret-right"></i>
               </span>
             </button>
+            <!-- <div class="todo-list" >
+              <span class="item-info">Minh's next task</span>
+              <div class="btn-list">
+                <button class="btn-del">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="btn-edit">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button class="btn-check">
+                  <i class="fa-regular fa-square-check"></i>
+                </button>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
+      <div class="overlay">
+        <div class="display-add">
+          <form class="add">
+            <div class="text">
+              <input type="text" placeholder="Add Todos" id="in-add" />
+            </div>
+            <hr />
+            <div class="btn-accept">
+              <button class="btn-save">Save</button>
+              <button class="btn-cancel">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="js/todos.js"></script>
+    <script type="module" src="js/todos.js"></script>
+    <!-- <script src="js/data.js"></script> -->
   </body>
 </html>
