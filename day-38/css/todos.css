@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-height: 100vh;
+  margin: 8rem auto;
+}
+
+.container .box {
+  max-width: 48rem;
+  width: 100%;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  font-family: Roboto, sans-serif;
+  /* border: 1px solid red; */
+}
+.container .box h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin: 0.75rem 0 0.75rem 0;
+  text-align: center;
+}
+.container .box h1 span:nth-child(1) {
+  color: #279b9f;
+}
+.container .box .todos {
+  padding-top: 1.25rem;
+}
+.container .box .todos .todos-search {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.container .box .todos .todos-search .todo-search {
+  width: 100%;
+  position: relative;
+}
+.container .box .todos .todos-search .todo-search #in-search {
+  padding: 1rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+
+.container .box .todos .todos-search .todo-search #in-search::placeholder {
+  font-size: 0.9rem;
+}
+.container .box .todos .todos-search .todo-search .btn-search {
+  padding-inline: 1rem;
+
+  background-color: blue;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.container .box .todos .todos-search .todo-search .btn-search:hover {
+  background: black;
+}
+.container .box .todos .todos-search .btn-add {
+  width: 20%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.625rem 1rem;
+  color: white;
+  background-color: green;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.container .box .todos .todos-search .btn-add:hover {
+  background: black;
+}
+
+.container .box .todos .todos-list {
+  padding: 0.75rem 0;
+}
+
+.container .box .todos .todos-list .todo-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 0.625rem;
+  background: white;
+  box-shadow: 1px 1px 3px 2px gray;
+  /* border: 1px solid gray; */
+  border-radius: 0.5rem;
+}
+.container .box .todos .todos-list .todo-list .item-info {
+  font-weight: 400;
+}
+.container .box .todos .todos-list .todo-list .btn-list {
+  display: flex;
+  gap: 0.5rem;
+}
+.container .box .todos .todos-list .todo-list .btn-list button {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.container .box .todos .todos-list .todo-list .btn-list button:hover {
+  background: black;
+}
+.container .box .todos .todos-list .todo-list .btn-list .btn-del {
+  background-color: rgb(194, 18, 18);
+}
+.container .box .todos .todos-list .todo-list .btn-list .btn-edit {
+  background-color: rgb(42, 42, 161);
+}
+.container .box .todos .todos-list .todo-list .btn-list .btn-check {
+  background-color: rgba(128, 128, 128, 0.37);
+}
+.container .box .todos .todos-list .btn-check-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  margin-top: 0.625rem;
+  background-color: gray;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+.container .box .todos .todos-list .btn-check-right:hover {
+  background: black;
+}
