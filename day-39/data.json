@@ -1,0 +1,100 @@
+{
+  "blogs": [
+    {
+      "author": {
+        "username": "Minh",
+        "avatar": "m",
+        "handle": "@minh"
+      },
+      "time": {
+        "days": "2",
+        "hour": "10h sáng",
+        "min": "47 phút"
+      },
+      "content": {
+        "title": "test2",
+        "body": "test again"
+      },
+      "links": [
+        {
+          "text": "view more test2..."
+        },
+        {
+          "text": "minh"
+        }
+      ]
+    },
+    {
+      "author": {
+        "username": "Minh",
+        "avatar": "m",
+        "handle": "@minh"
+      },
+      "time": {
+        "days": "3",
+        "hour": "0h sáng",
+        "min": "54 phút"
+      },
+      "content": {
+        "title": "test",
+        "body": "hello test"
+      },
+      "links": [
+        {
+          "text": "view more test..."
+        },
+        {
+          "text": "minh"
+        }
+      ]
+    },
+    {
+      "author": {
+        "username": "Tran Thi B",
+        "avatar": "t",
+        "handle": "@tranthi_b"
+      },
+      "time": {
+        "days": "1",
+        "hour": "8h tối",
+        "min": "30 phút"
+      },
+      "content": {
+        "title": "new blog",
+        "body": "this is a new blog entry"
+      },
+      "links": [
+        {
+          "text": "read more"
+        },
+        {
+          "text": "tranthi_b"
+        }
+      ]
+    },
+    {
+      "author": {
+        "username": "Le Van C",
+        "avatar": "l",
+        "handle": "@levan_c"
+      },
+      "time": {
+        "days": "5",
+        "hour": "7h sáng",
+        "min": "15 phút"
+      },
+      "content": {
+        "title": "another blog",
+        "body": "content of another blog"
+      },
+      "links": [
+        {
+          "text": "view details"
+        },
+        {
+          "text": "levan_c"
+        }
+      ]
+    }
+  ]
+}
