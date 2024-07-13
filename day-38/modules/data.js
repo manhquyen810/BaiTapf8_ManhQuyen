@@ -1,4 +1,4 @@
-const userApiUrl = `https://mg6629-8080.csb.app/todos`;
+const userApiUrl = `https://qng4vk-8080.csb.app/todos`;
 
 const getUsers = async () => {
   try {

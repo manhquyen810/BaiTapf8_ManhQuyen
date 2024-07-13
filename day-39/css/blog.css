@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  background-color: #272727;
+}
+
+.wrapper .btn-sign {
+  background: rgb(1, 146, 1);
+  transition: all 0.5s ease;
+}
+.wrapper .btn-sign:hover {
+  background: rgb(26, 92, 26);
+  color: white;
+}
+
+.blog-list {
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.blog-list .content {
+  max-width: 40rem;
+  width: 100%;
+  height: 16rem;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.blog-list .content .blog .time {
+  max-width: 6rem;
+  width: 100%;
+  position: absolute;
+  left: 0.3rem;
+  top: 1rem;
+  /* border: 1px solid red; */
+}
+.blog-list .content .blog .time .days {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 3px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+}
+.blog-list .content .blog .time .clock {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.blog-list .content .blog .blog-content .blog-name {
+  display: flex;
+}
+.blog-list .content .blog .blog-content .circle {
+  display: block;
+  max-width: 3rem;
+  width: 100%;
+  background-color: green;
+}
