@@ -1,4 +1,4 @@
-const serverApi = `http://localhost:3000`;
+const serverApi = `https://tdnmqx-8080.csb.app`;
 let page = 1;
 const getBlogs = async () => {
   try {
