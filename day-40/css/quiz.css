@@ -26,6 +26,10 @@
   background-color: black;
 }
 .animate__animated {
-  font-size: 3.5rem;
+  font-size: 5rem;
   line-height: 8rem;
+  transition: transform 0.5s ease;
 }
+/* .animate__zoomIn {
+  font-size: 3rem;
+} */
