@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/quiz.css" />
-    <link rel="stylesheet" href="css/quizQuestion.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="quizGame">
-      <div class="quizGame__question h-100">
+export const htmlQuestion = () => {
+  return `<div class="quizGame__question h-100">
         <div class="row h-100">
           <div class="col-12 quizGame__top">
             <div class="quizGame__top--inner">
@@ -130,7 +114,5 @@
             src="./mp3/a7d86a47a36c9684c1eed76ec551f7ba.mp3"
           />
         </audio>
-      </div>
-    </div>
-  </body>
-</html>
+      </div>`;
+};

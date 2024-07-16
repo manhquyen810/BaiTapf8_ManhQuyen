@@ -8,6 +8,7 @@
   height: 100vh;
   background-color: black;
   color: #fff;
+  overflow: hidden;
   /* border: 1px solid red; */
 }
 .quizGame .overlay {
@@ -20,16 +21,13 @@
   border-radius: 8px;
   border: 1px solid #fff;
 }
-.quizGame .overlay .quizizzGame__start--countdown {
+.quizGame .overlay .quizGame__start--countdown {
   height: 20vh;
-  /* border: 1px solid red; */
   background-color: black;
 }
-.animate__animated {
+
+.animate__zoomIn {
   font-size: 5rem;
   line-height: 8rem;
   transition: transform 0.5s ease;
 }
-/* .animate__zoomIn {
-  font-size: 3rem;
-} */
