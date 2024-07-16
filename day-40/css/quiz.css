@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.quizGame {
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  /* border: 1px solid red; */
+}
+.quizGame .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.quizGame .overlay .quizGame__start--button {
+  padding: 1rem 2.5rem;
+  font-size: 3rem;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+.quizGame .overlay .quizizzGame__start--countdown {
+  height: 20vh;
+  /* border: 1px solid red; */
+  background-color: black;
+}
+.animate__animated {
+  font-size: 3.5rem;
+  line-height: 8rem;
+}
