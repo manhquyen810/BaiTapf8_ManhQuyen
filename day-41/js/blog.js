@@ -1,18 +1,25 @@
 const serverApi = `https://tdnmqx-8080.csb.app`;
-let page = 1;
-const getBlogs = async () => {
+
+let params = {
+  _page: 1,
+  _limit: 2,
+};
+
+const getBlogs = async (params = {}) => {
   try {
-    const response = await fetch(`${serverApi}/blogs?page=${page}`);
+    // console.log(params);
+
+    let query = new URLSearchParams(params).toString();
+    if (query) {
+      query = "?" + query;
+    }
+    const response = await fetch(serverApi + "/blogs" + query);
     const blogs = await response.json();
     renderBlog(blogs);
-    //   testBlog(blogs);
-    console.log(blogs);
-    page++;
   } catch (e) {
     console.log(e.message);
   }
 };
-// getBlogs();
 
 const renderBlog = (blogs) => {
   const content = document.querySelector(".content");
@@ -53,12 +60,14 @@ const renderBlog = (blogs) => {
 };
 
 window.addEventListener("scroll", () => {
-  if (
-    window.scrollY + window.innerHeight >=
-    document.documentElement.scrollHeight
-  ) {
-    getBlogs();
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const windowHeight = document.documentElement.offsetHeight;
+
+  if (Math.abs(scrollPosition - windowHeight) < 1) {
+    params._page++;
+    params._limit++;
+    getBlogs(params);
   }
 });
 
-getBlogs();
+getBlogs(params);

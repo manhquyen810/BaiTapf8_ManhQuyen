@@ -26,12 +26,15 @@
   color: #ffffff;
   font-size: 2rem;
 }
-.column a,
-span {
+.column span {
   font-weight: 400;
   color: #ffffff;
   font-size: 1.2rem;
   transition: color 0.5s ease;
+}
+
+.column a {
+  color: wheat;
 }
 .column a:hover {
   color: #6eeb83;
