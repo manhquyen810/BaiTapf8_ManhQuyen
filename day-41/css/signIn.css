@@ -45,14 +45,14 @@
   flex-direction: column;
   gap: 10px;
 }
-.form-control {
+.formControl {
   gap: 4px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.form-control ._label_1ee5h_20 {
+.formControl ._label_1ee5h_20 {
   margin-top: 8px;
   display: block;
   font-weight: 700;
@@ -61,7 +61,7 @@
   line-height: 14px;
   color: #6eeb83;
 }
-.form-control ._input_1ee5h_1 {
+.formControl ._input_1ee5h_1 {
   margin: 4px;
   width: 310px;
   height: 40px;
